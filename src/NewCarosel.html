@@ -1,0 +1,142 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <style>
+      body {
+        font-family: "Kaushan Script", cursive;
+      }
+      .slick-section {
+        padding: 25px;
+        text-align: center;
+        .slick-container {
+          width: 700px;
+          margin: 0 auto;
+        }
+        .slick-wrap {
+          margin: 0 -10px;
+          .slick-item {
+            padding: 0 10px;
+            &.slick-center {
+              h2 {
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                color: #e67e22;
+                opacity: 1;
+                transform: scale(1.08);
+              }
+            }
+          }
+          h2 {
+            background-color: #f0f0f0;
+            padding: 80px 0;
+            text-transform: uppercase;
+          }
+        }
+        .slick-dots {
+          list-style-type: none;
+          margin: 25px 0 0;
+          padding: 0;
+          li {
+            width: auto;
+            height: auto;
+            display: inline-block;
+            padding: 0 5px;
+            button {
+              width: auto;
+              height: auto;
+              padding: 10px;
+              font-size: 12px;
+              color: #666;
+              border: none;
+              background: #f0f0f0;
+              &:before {
+                content: none;
+              }
+            }
+            &.slick-active {
+              button {
+                background: #ccc;
+              }
+            }
+          }
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="slick-section">
+      <header class="section-header">
+        <h2>Replace SLick Silder Dots with Text</h2>
+      </header>
+      <div class="slick-container">
+        <div class="slick-wrap">
+          <div class="slick-item">
+            <h2>Its #VEE</h2>
+          </div>
+
+          <div class="slick-item">
+            <h2>@ash</h2>
+          </div>
+
+          <div class="slick-item">
+            <h2>Now THREE</h2>
+          </div>
+
+          <div class="slick-item">
+            <h2>Slide 4</h2>
+          </div>
+          <div class="slick-item">
+            <h2>Slide 5</h2>
+          </div>
+          <div class="slick-item">
+            <h2>Slide 6</h2>
+          </div>
+          <div class="slick-item">
+            <h2>Ranjan</h2>
+          </div>
+          <div class="slick-item">
+            <h2>@sranzan</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+      $(".slick-wrap").on("init", function (event, slick) {
+        var dots = $(".slick-dots li");
+        console.log("SRANZAN VEE");
+        dots.each(function (k, v) {
+          $(this)
+            .find("button")
+            .addClass("heading" + k);
+        });
+        var items = slick.$slides;
+        items.each(function (k, v) {
+          var text = $(this).find("h2").text();
+          $(".heading" + k).text(text);
+        });
+      });
+      $(".slick-wrap").slick({
+        dots: true,
+        focusOnSelect: true,
+        infinite: true,
+        arrows: false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "30px",
+      });
+    </script>
+  </body>
+</html> -->

@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+p {
+  font-family: "29LT Bukra Regular";
+}
+
+@font-face {
+  font-family: "Poppinsthin";
+  src: url("/Fonts/Poppins-Thin.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppinsbold";
+  src: url("/Fonts/Poppins-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "29LT Bukra";
+  src: url("/Fonts/29lt-bukra.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "29LT-Bukra-Light";
+  src: url("/Fonts/29lt-bukra-light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "29LT Bukra SmBd";
+  src: url("/Fonts/29LT Bukra SmBd.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "29LT Bukra Medium";
+  src: url("/Fonts/29LT Bukra Md.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "29LT Bukra Regular";
+  src: url("/Fonts/29LT Bukra Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NewAmsterdam";
+  src: url("/Fonts/NewAmsterdam.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MYRIADPRO-REGULAR";
+  src: url("/Fonts/MYRIADPRO-REGULAR.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.rfm-marquee {
+  z-index: 0 !important;
+}
+
+/* Container Size */
+@media (max-width: 1600px) and (min-width: 1300px) {
+  .container {
+    max-width: 1050px;
+  }
+}
+@media (max-width: 1300px) and (min-width: 1100px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+/* Container Size */
+
+@media (max-width: 1000px) {
+  .notHomePageSearch {
+    /* display: none; */
+  }
+}

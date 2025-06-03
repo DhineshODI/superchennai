@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slick Carousel with Images and Internal Arrows</title>
+
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <style>
+      body {
+        font-family: "Kaushan Script", cursive;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: #fafafa;
+      }
+
+      .InnovateSliderslick-section {
+        padding: 50px 0;
+        text-align: center;
+      }
+
+      .InnovateSliderslick-container {
+        width: auto;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .InnovateSliderslick-container .InnovateSliderslick-wrap {
+        margin-left: 20%;
+      }
+
+      .InnovateSliderslick-wrap {
+        margin: 0;
+      }
+
+      .InnovateSliderslick-item {
+        width: 800px;
+        margin-right: 0.55%;
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+        background-color: #ddd;
+      }
+
+      .InnovateSliderslick-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .InnovateSlidercustom-dots {
+        list-style-type: none;
+        margin: 25px 0 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      .InnovateSlidercustom-dots li {
+        display: inline-block;
+        padding: 0 5px;
+      }
+
+      .InnovateSlidercustom-dots li button {
+        padding: 10px 15px;
+        font-size: 12px;
+        color: #666;
+        border: none;
+        background: #ddd;
+        cursor: pointer;
+      }
+
+      .InnovateSlidercustom-dots li button::before {
+        content: none;
+      }
+
+      .InnovateSlidercustom-dots li.slick-active button {
+        background: #bbb;
+        font-weight: bold;
+      }
+
+      .slick-list .InnovateSlidernav-buttons {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        right: 0;
+        transform: translateY(-50%);
+        justify-content: space-between;
+        padding: 0 20px;
+        pointer-events: none;
+        z-index: 2;
+      }
+
+      .slick-list .InnovateSlidernav-buttons button {
+        pointer-events: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        color: white;
+        font-size: 24px;
+        padding: 16px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      .slick-list .InnovateSlidernav-buttons button:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      @media screen and (max-width: 1300px) {
+        .InnovateSliderslick-item {
+          width: 700px;
+        }
+      }
+
+      @media screen and (max-width: 1100px) {
+        .InnovateSliderslick-item {
+          width: 600px;
+        }
+      }
+
+      @media screen and (max-width: 900px) {
+        .InnovateSliderslick-item {
+          width: 100%;
+          margin-right: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="InnovateSliderslick-section">
+      <div class="InnovateSliderslick-container">
+        <div class="InnovateSliderslick-wrap">
+          <div class="InnovateSliderslick-item">
+            <img src="https://i.ibb.co/M5n926nF/00b8a75ba8-1.png" alt="Slide 1" />
+          </div>
+          <div class="InnovateSliderslick-item">
+            <img src="https://i.ibb.co/M5n926nF/00b8a75ba8-1.png" alt="Slide 2" />
+          </div>
+          <div class="InnovateSliderslick-item">
+            <img src="https://i.ibb.co/M5n926nF/00b8a75ba8-1.png" alt="Slide 3" />
+          </div>
+          <div class="InnovateSliderslick-item">
+            <img src="https://i.ibb.co/M5n926nF/00b8a75ba8-1.png" alt="Slide 4" />
+          </div>
+          <div class="InnovateSliderslick-item">
+            <img src="https://i.ibb.co/M5n926nF/00b8a75ba8-1.png" alt="Slide 5" />
+          </div>
+          <div class="InnovateSliderslick-item">
+            <img src="https://i.ibb.co/M5n926nF/00b8a75ba8-1.png" alt="Slide 6" />
+          </div>
+          <div class="InnovateSliderslick-item">
+            <img src="https://i.ibb.co/M5n926nF/00b8a75ba8-1.png" alt="Slide 7" />
+          </div>
+          <div class="InnovateSliderslick-item">
+            <img src="https://i.ibb.co/M5n926nF/00b8a75ba8-1.png" alt="Slide 8" />
+          </div>
+        </div>
+
+        <!-- Custom Dots -->
+        <ul class="InnovateSlidercustom-dots"></ul>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+      $(".InnovateSliderslick-wrap").on("init", function (event, slick) {
+        // Populate dots with slide alt texts
+        var dots = $(".InnovateSlidercustom-dots li");
+        dots.each(function (k) {
+          $(this).find("button").addClass("InnovateSliderheading" + k);
+        });
+        slick.$slides.each(function (k) {
+          var text = $(this).find("img").attr("alt");
+          $(".InnovateSliderheading" + k).text(text);
+        });
+
+        // Add navigation buttons inside slick-list after init
+        const navButtons = `
+          <div class="InnovateSlidernav-buttons">
+            <button id="InnovateSliderprevBtn">←</button>
+            <button id="InnovateSlidernextBtn">→</button>
+          </div>`;
+        $(slick.$list).append(navButtons);
+
+        // Navigation events
+        $("#InnovateSliderprevBtn").on("click", function () {
+          $(".InnovateSliderslick-wrap").slick("slickPrev");
+        });
+
+        $("#InnovateSlidernextBtn").on("click", function () {
+          $(".InnovateSliderslick-wrap").slick("slickNext");
+        });
+      });
+
+      $(".InnovateSliderslick-wrap").slick({
+        dots: true,
+        appendDots: $(".InnovateSlidercustom-dots"),
+        infinite: true,
+        arrows: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: true,
+      });
+    </script>
+  </body>
+</html>
