@@ -69,6 +69,10 @@ export default function EmploymentBusinessPermits() {
                   shops in the Chennai area have to be owned by the shop owner.
                 </>,
                 <>
+                  <strong> FSSAI License:</strong> Food product sellers such as
+                  grocery shop owners and restaurant owners need this.
+                </>,
+                <>
                   <strong> GST Registration:</strong> This is needed to collect
                   GST from the customers if you reach a specific turnover.
                 </>,
@@ -104,7 +108,8 @@ export default function EmploymentBusinessPermits() {
                   region.
                 </>,
                 <>
-                  <strong> Submit:</strong> To get your work done, you must submit the required documents.
+                  <strong> Submit:</strong> To get your work done, you must
+                  submit the required documents.
                   <br />
                   <small>
                     {" "}
@@ -265,7 +270,7 @@ export default function EmploymentBusinessPermits() {
                   </small>
                 </>,
               ],
-              imgs: "/images/Work-Images/SubPages/Icons/For-Business-All-Residents.svg",
+              imgs: "/images/Work-Images/SubPages/Icons/transfer-of-permits.svg",
             },
           ],
         },
@@ -508,7 +513,7 @@ export default function EmploymentBusinessPermits() {
           </section>
         ))}
 
-          <SliderWorkPage />
+        <SliderWorkPage />
 
         {/*----------------- Social & CTA ----------------*/}
         <div className="AccomodationInstaReel">

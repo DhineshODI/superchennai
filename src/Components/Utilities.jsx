@@ -12,7 +12,7 @@ export default function Utilitiesinchennai() {
       title: "North",
       content: (
         <>
-          <img src="/images/HomePage-Images/North-Chennai.png" alt="" />
+          <img src="/images/HomePage-Images/North Chennai.png" alt="" />
         </>
       ),
     },
@@ -21,7 +21,7 @@ export default function Utilitiesinchennai() {
       title: "South",
       content: (
         <>
-          <img src="/images/HomePage-Images/South-Chennai.png" alt="" />
+          <img src="/images/HomePage-Images/South Chennai.png" alt="" />
         </>
       ),
     },
@@ -30,7 +30,7 @@ export default function Utilitiesinchennai() {
       title: "Central",
       content: (
         <>
-          <img src="/images/HomePage-Images/Central-Chennai.png" alt="" />
+          <img src="/images/HomePage-Images/Central Chennai.png" alt="" />
         </>
       ),
     },
@@ -73,8 +73,18 @@ export default function Utilitiesinchennai() {
             </div>
             <div className="utilitiCheCol ">
               <div className="utilitiCTabs flex">
-                <ul className="tabs flex flex-col items-start">
+                <ul className="tabs flex flex-col items-start tabsSectionFlex">
                   {tabsData.map((tab, index) => (
+                    // <li
+                    //   key={tab.id}
+                    //   className={`tab ${activeTab === tab.id ? "active" : ""} ${
+                    //     index === tabsData.length - 1 ? "tab_last" : ""
+                    //   }`}
+                    //   rel={tab.id}
+                    //   onClick={() => handleTabClick(tab.id)}
+                    // >
+                    //   {tab.title}
+                    // </li>
                     <li
                       key={tab.id}
                       className={`tab ${activeTab === tab.id ? "active" : ""} ${
@@ -82,6 +92,7 @@ export default function Utilitiesinchennai() {
                       }`}
                       rel={tab.id}
                       onClick={() => handleTabClick(tab.id)}
+                      style={{ transition: "all 0.3s ease" }}
                     >
                       {tab.title}
                     </li>

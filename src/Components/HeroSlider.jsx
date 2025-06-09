@@ -15,19 +15,19 @@ const slides = [
     title: "First slide label",
     description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   },
-  {
-    image: "./images/HomePage-Images/banner-2.jpg",
-    image1: "./images/HomePage-Images/mobile-banner-3.jpg",
-    title: "Second slide label",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    image: "./images/HomePage-Images/banner-3.jpg",
-    image1: "./images/HomePage-Images/mobile-banner-4.jpg",
-    title: "Third slide label",
-    description:
-      "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
-  },
+  // {
+  //   image: "./images/HomePage-Images/banner-2.jpg",
+  //   image1: "./images/HomePage-Images/mobile-banner-3.jpg",
+  //   title: "Second slide label",
+  //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  // },
+  // {
+  //   image: "./images/HomePage-Images/banner-3.jpg",
+  //   image1: "./images/HomePage-Images/mobile-banner-4.jpg",
+  //   title: "Third slide label",
+  //   description:
+  //     "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
+  // },
   {
     image: "./images/HomePage-Images/banner-5.jpg",
     image1: "./images/HomePage-Images/mobile-banner-5.jpg",

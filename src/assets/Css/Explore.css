@@ -2,7 +2,8 @@
 @import "slick-carousel/slick/slick-theme.css";
 
 .ExploreChennaiContainer {
-  padding-top: 80px;
+  padding-top: 0px;
+  margin-top: 80px;
 }
 
 .ExploreChennaiContainer .slick-track {

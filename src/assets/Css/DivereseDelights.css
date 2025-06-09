@@ -92,10 +92,15 @@
   cursor: pointer;
 }
 .foodSectionConatiner h4 {
-  font-family: "NewAmsterdam";
-  color: #a1a1a1;
-  font-size: clamp(24px, 5vw, 75px);
-  line-height: clamp(28px, 5vw, 70px);
+    font-family: "NewAmsterdam";
+    color: #a1a1a1;
+    font-size: clamp(24px, 5vw, 75px);
+    line-height: clamp(28px, 5vw, 70px);
+    transition: color 1s ease;
+    -webkit-transition: color 1s ease;
+    -moz-transition: color 1s ease;
+    -ms-transition: color 1s ease;
+    -o-transition: color 1s ease;
 }
 
 .activeDiverseSection h4 {

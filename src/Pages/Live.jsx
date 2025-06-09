@@ -56,7 +56,7 @@ export default function Live() {
     },
     {
       id: 4,
-      image: "./images/Live-Images/Transportation.jpg",
+      image: "./images/Live-Images/chennaiLifeEssential4.png",
       text: "Transportation",
       link: "/transportation",
     },

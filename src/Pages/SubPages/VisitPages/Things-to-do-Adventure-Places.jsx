@@ -54,7 +54,7 @@ export default function ThingstodoAdventurePlaces() {
     },
     {
       id: 4,
-      title: "VGP Universal Kingdom, ECR - East Coast Road",
+      title: "VGP Snow Kingdom, ECR - East Coast Road",
       image:
         "/images/Visit-Images/SubPages/Things-to-do/Adventure places/snow-kingdom.jpg",
       link1: "https://www.snowkingdom.com/chennai.php",
@@ -76,13 +76,13 @@ export default function ThingstodoAdventurePlaces() {
     },
     {
       src: "images/Visit-Images/SubPages/places-to-visit-slide.jpg",
-      title: "places to visit",
-      link: "/places-to-visit",
+      title: "Places to Visit",
+      link: "/placestovisit",
     },
     {
       src: "images/Visit-Images/SubPages/things-to-do-slide.jpg",
-      title: "things to do ",
-      link: "/things-to-do",
+      title: "Things to Do",
+      link: "/thingstodo",
     },
     {
       src: "images/Visit-Images/SubPages/itinerary-slide.jpg",
@@ -92,7 +92,7 @@ export default function ThingstodoAdventurePlaces() {
     {
       src: "images/Visit-Images/SubPages/hidden-gems-slide.jpg",
       title: "Hidden Gems",
-      link: "/hidden-gems",
+      link: "/hiddengems",
     },
     {
       src: "images/Visit-Images/SubPages/shopping-slide.jpg",
@@ -102,7 +102,7 @@ export default function ThingstodoAdventurePlaces() {
     {
       src: "images/Visit-Images/SubPages/travel-tips-slide.jpg",
       title: "Travel Tips",
-      link: "/travel-tips",
+      link: "/traveltips",
     },
     {
       src: "images/Visit-Images/SubPages/wellness-slide.jpg",
@@ -183,6 +183,7 @@ export default function ThingstodoAdventurePlaces() {
             src="images/Visit-Images/SubPages/Things-to-do/adventure&thrills.jpg"
             alt=""
           />
+
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
               <h3>Adventure places</h3>

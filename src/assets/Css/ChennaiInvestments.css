@@ -11,25 +11,25 @@
 }
 
 .ChennaiInvestBackground {
-    position: absolute;
-    bottom: 10%;
-    left: 0;
-    white-space: nowrap;
-    width: 200%;
-    /* animation: scrollText 20s linear infinite; */
-    z-index: 0;
-    opacity: 0.024;
-    animation-duration: 15s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    -webkit-animation: scrollText 50s linear infinite;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  white-space: nowrap;
+  width: 200%;
+  /* animation: scrollText 20s linear infinite; */
+  z-index: 0;
+  opacity: 0.024;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation: scrollText 50s linear infinite;
 }
 
 .ChennaiInvestBackground p {
-    font-family: "29LT Bukra SmBd";
-    font-size: clamp(80px, 14vw, 280px);
-    line-height: clamp(100px, 14vw, 230px);
-    text-transform: uppercase;
+  font-family: "29LT Bukra SmBd";
+  font-size: clamp(80px, 14vw, 280px);
+  line-height: clamp(100px, 14vw, 230px);
+  text-transform: uppercase;
 }
 .ChennaiInvestScrolLeft {
   animation-name: scrollLeftVolunteer;
@@ -56,7 +56,6 @@
     transform: translateX(0%);
   }
 }
-
 
 .ChennaiInvestMents h4 {
   font-family: "NewAmsterdam";
@@ -88,12 +87,14 @@
   border: 3px solid #dddddd;
   border-radius: 50px;
   -webkit-border-radius: 50px;
-  /* padding: 5px 17px; */
-  padding: 5px 30px;
+  padding: 2px 30px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   word-spacing: 3px;
+  background-color: #fff;
+  padding-top: 7px;
+  padding-bottom: 3px;
 }
 .chennaiInvestmentsButtons button:hover {
   cursor: pointer;
@@ -104,6 +105,7 @@
   background: #a44294;
   color: #fff;
   border: 3px solid #e1d5df;
+  padding-bottom: 5px;
 }
 
 .bulidingSection h3 {
@@ -142,8 +144,13 @@
   -o-border-radius: 18px;
   cursor: pointer;
   z-index: 1;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.5s ease;
+  will-change: transform;
 }
-
+.bulidingSection:hover {
+  transform: translateY(-12px) scale(1.02);
+}
 .builidngContent {
   cursor: pointer;
   padding: 47px;
@@ -201,15 +208,14 @@
   margin-bottom: 80px;
 }
 
-@media(max-width:1600px) and (min-width:1300px){
-  .ChennaiInvestContainerdiv{
+@media (max-width: 1600px) and (min-width: 1300px) {
+  .ChennaiInvestContainerdiv {
     max-width: 1200px;
   }
 }
 
 @media (max-width: 768px) {
-
-  .chennaiInvestmentBg{
+  .chennaiInvestmentBg {
     padding-top: 70px;
     padding-bottom: 1px;
     background-repeat: no-repeat;
@@ -217,9 +223,8 @@
     background: #ebebeb;
   }
 
-
   .ChennaiInvestMents h4 {
-     font-size: 65px;
+    font-size: 65px;
     line-height: 50px;
     width: 50%;
   }

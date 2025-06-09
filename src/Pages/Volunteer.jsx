@@ -229,7 +229,7 @@ export default function Volunteer() {
               </div>
 
               <form className="um-form-section">
-                <h2>Contact Us</h2>
+                <h2>VOLUNTEER FOR SUPER CHENNAI</h2>
                 <input type="text" placeholder="Name" required />
                 <input type="email" placeholder="Email" required />
                 <input type="tel" placeholder="Phone Number" required />

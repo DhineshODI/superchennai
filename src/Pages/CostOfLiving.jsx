@@ -108,7 +108,7 @@ export default function CostLivinginChennai() {
   const images = [
     {
       src: "/images/Live-Images/Cost-of-living.jpg",
-      title: "Cost-of-living",
+      title: "Cost-of-Living",
       link: "/costofliving",
     },
     {
@@ -127,7 +127,7 @@ export default function CostLivinginChennai() {
       link: "/employmentinchennai",
     },
     {
-      src: "/images/Live-Images/Transportation.jpg",
+      src: "/images/Live-Images/chennaiLifeEssential4.png",
       title: "Transportation",
       link: "/transportation",
     },
@@ -265,11 +265,11 @@ export default function CostLivinginChennai() {
               further depth.
             </p>
 
-            <p>
+            {/* <p>
               For a bachelor/Spinster: The cost of living in Chennai will be
               determined by each person's preferences for food, lodging, and
               location. Let's take a closer look.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
@@ -280,7 +280,7 @@ export default function CostLivinginChennai() {
             <img src="/images/clcscrlImg.jpg" alt="" />
             <div className="clcscrLtitle bg-[#7d377c] relative">
               <h2 className="flex flex-col">
-                <small>For a</small> Single{" "}
+                <small>For</small> A Bachelor
               </h2>
               <p>
                 The cost of living in Chennai will be determined by each
@@ -321,7 +321,7 @@ export default function CostLivinginChennai() {
             <img src="/images/clcscrCoplImg.jpg" alt="" />
             <div className="clcscrLtitle bg-[#672866] relative">
               <h2 className="flex flex-col">
-                <small>For a</small> Couple{" "}
+                <small>For </small>A Couple{" "}
               </h2>
               <p>
                 When compared to a single person living alone, couples' combined
@@ -362,7 +362,7 @@ export default function CostLivinginChennai() {
             <img src="/images/clcscrfamilylImg.jpg" alt="" />
             <div className="clcscrLtitle bg-[#672866] relative">
               <h2 className="flex flex-col">
-                <small>For a</small> Family{" "}
+                <small>For</small>A Family{" "}
               </h2>
               <p>
                 As they require more space, devour additional meals, and

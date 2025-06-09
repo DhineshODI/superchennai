@@ -70,8 +70,8 @@ export default function ClassicItalianFlavors() {
   const images = [
     { src: "images/Visit-Images/SubPages/accomodation-slide.jpg", title: "Accomodation", link: "/accomodation" },
     { src: "images/Visit-Images/SubPages/food-slide.jpg", title: "Food", link: "/food" },
-    { src: "images/Visit-Images/SubPages/places-to-visit-slide.jpg", title: "places to visit", link: "/places-to-visit" },
-    { src: "images/Visit-Images/SubPages/things-to-do-slide.jpg", title: "things to do ", link: "/things-to-do" },
+    { src: "images/Visit-Images/SubPages/places-to-visit-slide.jpg", title: "Places to Visit", link: "/places-to-visit" },
+    { src: "images/Visit-Images/SubPages/things-to-do-slide.jpg", title: "Things to Do", link: "/things-to-do" },
     { src: "images/Visit-Images/SubPages/itinerary-slide.jpg", title: "itinerary", link: "/itinerary" },
      { src: "images/Visit-Images/SubPages/hidden-gems-slide.jpg", title: "Hidden Gems", link: "/hidden-gems" },
       { src: "images/Visit-Images/SubPages/shopping-slide.jpg", title: "Shopping", link: "/shopping" },

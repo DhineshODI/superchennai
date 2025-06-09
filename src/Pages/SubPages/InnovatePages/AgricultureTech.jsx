@@ -211,7 +211,7 @@ export default function AgricultureTech() {
     },
     {
       src: "/images/Innovate-Images/SubPages/Augmented Reality-Virtual Reality-thum.jpg",
-      title: "Augmentedreality ",
+      title: "Augmented Reality ",
       link: "/augmentedreality",
     },
     {

@@ -4095,10 +4095,8 @@ const dummyData = [
 export default function SearchResults() {
   const query = useQuery().get("search");
   const results = useMemo(() => {
-    if (!query) return [];
-
+    if (!query) return dummyData; 
     const lowerQuery = query.toLowerCase();
-
     return dummyData
       .map((item) => {
         let score = 0;
@@ -4115,11 +4113,13 @@ export default function SearchResults() {
         return { ...item, score };
       })
       .filter((item) => item.score > 0)
-      .sort((a, b) => b.score - a.score); // High score = higher relevance
+      .sort((a, b) => b.score - a.score);
   }, [query]);
+
   return (
     <>
-      <div className="accaodomationBannerSection">
+        <div >
+        <div className="accaodomationBannerSection">
         <div>
           <img src="./images/AccodomationBannerr.jpg" alt="" />
         </div>
@@ -4135,6 +4135,11 @@ export default function SearchResults() {
           <Search />
         </div>
       </div>
+        <div className="notHomePageSearch">
+          <Search />
+        </div>
+      </div>
+
       <div className="searchResultsContainer">
         {results.length > 0 ? (
           <div className="SearchCardGrid">
@@ -4147,11 +4152,13 @@ export default function SearchResults() {
             ))}
           </div>
         ) : (
-          <div className="accodoamationBannerText">
-            <p>No results found.</p>
+          <div className="workIntro mt-10">
+            <h3>No results found {query ? `for "${query}"` : ""}</h3>
+            <p>Try using different keywords or check your spelling and try again.</p>
           </div>
         )}
       </div>
     </>
   );
 }
+

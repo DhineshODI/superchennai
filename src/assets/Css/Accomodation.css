@@ -297,7 +297,24 @@
 .ExplorePageSliderImage {
   padding-right: 10px;
   padding-left: 10px;
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.5s ease;
+  will-change: transform;
 }
+
+.ExplorePageSliderImage:hover{
+  transform: translateY(-12px) scale(1.00);
+  -webkit-transform: translateY(-12px) scale(1.00);
+  -moz-transform: translateY(-12px) scale(1.00);
+  -ms-transform: translateY(-12px) scale(1.00);
+  -o-transform: translateY(-12px) scale(1.00);
+}
+
+
+.exploreSldierSection .slick-list{
+  padding-top: 20px;
+}
+
 
 .titleTextExploreChennai {
   /* display: none; */

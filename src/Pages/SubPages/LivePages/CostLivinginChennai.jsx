@@ -121,7 +121,7 @@ export default function FutureGrowthDevelopment() {
   const images = [
     {
       src: "/images/Live-Images/Cost-of-living.jpg",
-      title: "Cost-of-living",
+      title: "Cost-of-Living",
       link: "/costofliving",
     },
     {
@@ -135,7 +135,7 @@ export default function FutureGrowthDevelopment() {
       link: "/employmentinchennai",
     },
     {
-      src: "/images/Live-Images/Transportation.jpg",
+      src: "/images/Live-Images/chennaiLifeEssential4.png",
       title: "Transportation",
       link: "/transportation",
     },

@@ -24,7 +24,7 @@ export default function InvestRenewableEnergyChennai() {
       description:
         "Investigate prospective wind power generation prospects in areas close to Chennai with abundant wind resources, then make an investment.",
     },
-    "Renewable energy": {
+    "Renewable Energy": {
       title: "Renewable Energy",
       description:
         "Renewable energy technologies are now gaining popularity in Chennai; investigating and making an investment in this energy will yield long-term financial gains.",

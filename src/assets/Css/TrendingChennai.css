@@ -238,6 +238,20 @@
   text-transform: uppercase;
 }
 
+  .trendingChennaiCard {
+    /* transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 0.5s ease !important; */
+    /* will-change: transform !important; */
+  }
+
+  .trendingChennaiCard:hover {
+    /* transform: translateY(-10px) scale(1.1) !important;
+    -webkit-transform: translateY(-10px) scale(1.1) !important;
+    -moz-transform: translateY(-10px) scale(1.1) !important;
+    -ms-transform: translateY(-10px) scale(1.1) !important;
+    -o-transform: translateY(-10px) scale(1.1) !important; */
+}
+
 @media (max-width: 1600px) and (min-width: 1300px) {
   .tredingMainContainer {
     overflow: hidden;
@@ -302,7 +316,19 @@
 
   .trendingChennaiCard {
     height: 390px !important;
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 0.5s ease !important;
+    will-change: transform !important;
   }
+
+  .trendingChennaiCard:hover {
+    transform: translateY(-12px) scale(1.02) !important;
+    -webkit-transform: translateY(-12px) scale(1.02) !important;
+    -moz-transform: translateY(-12px) scale(1.02) !important;
+    -ms-transform: translateY(-12px) scale(1.02) !important;
+    -o-transform: translateY(-12px) scale(1.02) !important;
+  }
+
   .tredingMainContainer {
     overflow: hidden;
     padding-top: 0px;

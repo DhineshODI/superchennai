@@ -210,7 +210,7 @@ export default function RoboticsandAutomation() {
     },
     {
       src: "/images/Innovate-Images/SubPages/Augmented Reality-Virtual Reality-thum.jpg",
-      title: "Augmentedreality ",
+      title: "Augmented Reality ",
       link: "/augmentedreality",
     },
     {

@@ -159,13 +159,13 @@ export default function Placestovisit() {
     },
     {
       src: "images/Visit-Images/SubPages/places-to-visit-slide.jpg",
-      title: "places to visit",
-      link: "/places-to-visit",
+      title: "Places to Visit",
+      link: "/placestovisit",
     },
     {
       src: "images/Visit-Images/SubPages/things-to-do-slide.jpg",
-      title: "things to do ",
-      link: "/things-to-do",
+      title: "Things to Do",
+      link: "/thingstodo",
     },
     {
       src: "images/Visit-Images/SubPages/itinerary-slide.jpg",
@@ -175,7 +175,7 @@ export default function Placestovisit() {
     {
       src: "images/Visit-Images/SubPages/hidden-gems-slide.jpg",
       title: "Hidden Gems",
-      link: "/hidden-gems",
+      link: "/hiddengems",
     },
     {
       src: "images/Visit-Images/SubPages/shopping-slide.jpg",
@@ -185,7 +185,7 @@ export default function Placestovisit() {
     {
       src: "images/Visit-Images/SubPages/travel-tips-slide.jpg",
       title: "Travel Tips",
-      link: "/travel-tips",
+      link: "/traveltips",
     },
     {
       src: "images/Visit-Images/SubPages/wellness-slide.jpg",

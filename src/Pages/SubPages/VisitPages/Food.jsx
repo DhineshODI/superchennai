@@ -281,77 +281,142 @@ export default function Food() {
         },
       ],
     },
+    // {
+    //   sectionTitle: "Japanese Cuisine",
+    //   sectionDesc:
+    //     "Savor the fresh flavors of Japan in Chennai with carefully prepared sushi, sashimi, ramen, and tempura made with premium ingredients. ",
+    //   image: "/images/Visit-Images/SubPages/japanese-cuisine.jpg",
+    //   tenantInfoSections: [
+    //     {
+    //       points: [
+    //         {
+    //           title: "Delicate Japanese Sushi",
+    //           para: [
+    //             "Discover the Japanese culinary perfection of sushi and sashimi, which feature freshly caught fish and expertly seasoned rice.",
+    //           ],
+    //           imgs: "images/Visit-Images/SubPages/Icons/Delicate-Japanese-Sushi.svg",
+    //           link: "/delicateJapaneseSushi",
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       points: [
+    //         {
+    //           title: "Savory Japanese Ramen",
+    //           para: [
+    //             "Savor the traditional Japanese cuisine of noodle soup, which is rich in broth and may be topped with a variety of ingredients such as meat, eggs, and vegetables.  ",
+    //           ],
+    //           imgs: "images/Visit-Images/SubPages/Icons/Savory-Japanese-Ramen.svg",
+    //           link: "/savoryJapaneseRamen",
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
+    // {
+    //   sectionTitle: "Mediterranean Cuisine",
+    //   sectionDesc:
+    //     "Savor meals made with olive oil, grilled meats and shellfish, fresh salads, and tasty dips that offer wholesome and vivid flavors. ",
+    //   image: "/images/Visit-Images/SubPages/mediterranean-cuisine.jpg",
+    //   tenantInfoSections: [
+    //     {
+    //       points: [
+    //         {
+    //           title: "Fresh Mediterranean Salads",
+    //           para: [
+    //             "Savor colorful salads that exemplify the healthful Mediterranean diet, such as Greek salad and fattoush, which are made with fresh vegetables, herbs, feta cheese, and olive oil.",
+    //           ],
+    //           imgs: "images/Visit-Images/SubPages/Icons/Fresh-Mediterranean-Salads.svg",
+    //           link: "/freshMediterraneanSalads",
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       points: [
+    //         {
+    //           title: "Grilled Mediterranean Specialties",
+    //           para: [
+    //             "Relish Mediterranean mainstays like hummus and baba ghanoush on the side with grilled meats like souvlaki and kebabs. ",
+    //           ],
+    //           imgs: "images/Visit-Images/SubPages/Icons/Grilled-Mediterranean-Specialties.svg",
+    //           link: "/grilledMediterraneanSpecialties",
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       points: [
+    //         {
+    //           title: "Coastal & Regional Specialties",
+    //           para: [
+    //             "Explore the flavours of spicy blends and seafood recipes of south India from the coastal regions in Chennai.  ",
+    //           ],
+    //           imgs: "images/Visit-Images/SubPages/Icons/Grilled-Mediterranean-Specialties.svg",
+    //           link: "/coastalandreginalspecialist",
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
     {
-      sectionTitle: "Japanese Cuisine",
+      sectionTitle: "Chinese Cuisine",
       sectionDesc:
-        "Savor the fresh flavors of Japan in Chennai with carefully prepared sushi, sashimi, ramen, and tempura made with premium ingredients. ",
-      image: "/images/Visit-Images/SubPages/japanese-cuisine.jpg",
+        "Savor a variety of regional Chinese cuisines by indulging in dim sum, savory rice preparations, fragrant stir-fries, and tasty noodle dishes.",
+      image: "/images/Visit-Images/SubPages/Chinese-Cuisine.jpg",
       tenantInfoSections: [
         {
           points: [
             {
-              title: "Delicate Japanese Sushi",
+              title: "Dim Sum and Noodles",
               para: [
-                "Discover the Japanese culinary perfection of sushi and sashimi, which feature freshly caught fish and expertly seasoned rice.",
+                "Savor a range of tasty noodle dishes, crunchy spring rolls, and delicate steamed dumplings that highlight the lighter side of Chinese culinary expertise.",
               ],
-              imgs: "images/Visit-Images/SubPages/Icons/Delicate-Japanese-Sushi.svg",
-              link: "/delicateJapaneseSushi",
+              imgs: "images/Visit-Images/SubPages/Icons/Savory-Japanese-Ramen.svg",
+              link: "/dimsumandnoodles",
             },
           ],
         },
         {
           points: [
             {
-              title: "Savory Japanese Ramen",
+              title: "Authentic Chinese Mains",
               para: [
-                "Savor the traditional Japanese cuisine of noodle soup, which is rich in broth and may be topped with a variety of ingredients such as meat, eggs, and vegetables.  ",
+                "Savor traditional fried rice, fiery schezwan dishes, and rich gravies made with traditional ingredients and methods.",
               ],
-              imgs: "images/Visit-Images/SubPages/Icons/Savory-Japanese-Ramen.svg",
-              link: "/savoryJapaneseRamen",
+
+              imgs: "images/Visit-Images/SubPages/Icons/Delicate-Japanese-Sushi.svg",
+              link: "/authenticchinesemains",
             },
           ],
         },
       ],
     },
     {
-      sectionTitle: "Mediterranean Cuisine",
+      sectionTitle: "South Indian Cuisine",
       sectionDesc:
-        "Savor meals made with olive oil, grilled meats and shellfish, fresh salads, and tasty dips that offer wholesome and vivid flavors. ",
-      image: "/images/Visit-Images/SubPages/mediterranean-cuisine.jpg",
+        "South Indian cuisines showcases or regional specialities from traditional flavours from dosa to idlis, aromatic curries and rice recipes.",
+      image: "/images/Visit-Images/SubPages/south-indian-cuisine.jpg",
       tenantInfoSections: [
         {
           points: [
             {
-              title: "Fresh Mediterranean Salads",
+              title: "Breakfast & Tiffin Staples",
               para: [
-                "Savor colorful salads that exemplify the healthful Mediterranean diet, such as Greek salad and fattoush, which are made with fresh vegetables, herbs, feta cheese, and olive oil.",
+                "Give your taste buds a best treat in the morning with soft idlis, dosas, fluffy, pooris and vadas with chutneys and sambar. ",
               ],
               imgs: "images/Visit-Images/SubPages/Icons/Fresh-Mediterranean-Salads.svg",
-              link: "/freshMediterraneanSalads",
+              link: "/BreakfastTiffinStaples",
             },
           ],
         },
         {
           points: [
             {
-              title: "Grilled Mediterranean Specialties",
+              title: "Traditional South Indian Meals (Thali)",
               para: [
-                "Relish Mediterranean mainstays like hummus and baba ghanoush on the side with grilled meats like souvlaki and kebabs. ",
+                "These are the meals that are served on the leaves with rice, gravy, poriyals, papad and some traditional accompaniments. ",
               ],
               imgs: "images/Visit-Images/SubPages/Icons/Grilled-Mediterranean-Specialties.svg",
-              link: "/grilledMediterraneanSpecialties",
-            },
-          ],
-        },
-        {
-          points: [
-            {
-              title: "Coastal & Regional Specialties",
-              para: [
-                "Explore the flavours of spicy blends and seafood recipes of south India from the coastal regions in Chennai.  ",
-              ],
-              imgs: "images/Visit-Images/SubPages/Icons/Grilled-Mediterranean-Specialties.svg",
-              link: "/coastalandreginalspecialist",
+              link: "/traditionalsouthindianmealsthali",
             },
           ],
         },
@@ -372,13 +437,13 @@ export default function Food() {
     },
     {
       src: "images/Visit-Images/SubPages/places-to-visit-slide.jpg",
-      title: "Places to visit",
+      title: "Places to Visit",
       link: "/placestovisit",
     },
     {
       src: "images/Visit-Images/SubPages/things-to-do-slide.jpg",
-      title: "Things to do ",
-      link: "/things-to-do",
+      title: "Things to Do",
+      link: "/thingstodo",
     },
     {
       src: "images/Visit-Images/SubPages/itinerary-slide.jpg",
@@ -388,7 +453,7 @@ export default function Food() {
     {
       src: "images/Visit-Images/SubPages/hidden-gems-slide.jpg",
       title: "Hidden Gems",
-      link: "/hidden-gems",
+      link: "/hiddengems",
     },
     {
       src: "images/Visit-Images/SubPages/shopping-slide.jpg",
@@ -398,7 +463,7 @@ export default function Food() {
     {
       src: "images/Visit-Images/SubPages/travel-tips-slide.jpg",
       title: "Travel Tips",
-      link: "/travel-tips",
+      link: "/traveltips",
     },
     {
       src: "images/Visit-Images/SubPages/wellness-slide.jpg",

@@ -23,7 +23,7 @@ export default function CardCarousel111() {
       EventsCalendarTime: "10:30 AM",
       EventsCalendarCategory: "Networking",
       image: "/images/HomePage-Images/Events/Events1.jpg",
-      link: "https://in.bookmyshow.com/events/shaadi-shud-i-by-mohammed-hussain/ET00396162",
+      link: "/eventstechinnovaters",
     },
     {
       EventsCalendarTitle: "Tech Innovators Meetup",
@@ -32,7 +32,7 @@ export default function CardCarousel111() {
       EventsCalendarTime: "2:00 PM",
       EventsCalendarCategory: "Technology",
       image: "/images/HomePage-Images/Events/Events2.jpg",
-      link: "https://in.bookmyshow.com/events/chennai-business-networking/ET00446574",
+      link: "/eventstechstartups",
     },
     {
       EventsCalendarTitle: "Entrepreneur Workshop",
@@ -41,7 +41,7 @@ export default function CardCarousel111() {
       EventsCalendarTime: "11:00 AM",
       EventsCalendarCategory: "Business",
       image: "/images/HomePage-Images/Events/Events3.jpg",
-      link: "https://in.bookmyshow.com/events/cyber-security-expo-and-conference-india-csec/ET00440106",
+      link: "/eventschennaibusinessnetwork",
     },
     {
       EventsCalendarTitle: "Startup Networking Global Startup Clubs",
@@ -51,7 +51,7 @@ export default function CardCarousel111() {
       EventsCalendarTime: "10:30 AM",
       EventsCalendarCategory: "Networking",
       image: "/images/HomePage-Images/Events/Events1.jpg",
-      link: "https://in.bookmyshow.com/events/shaadi-shud-i-by-mohammed-hussain/ET00396162",
+      link: "/eventstechinnovaters",
     },
     {
       EventsCalendarTitle: "Tech Innovators Meetup",
@@ -60,7 +60,7 @@ export default function CardCarousel111() {
       EventsCalendarTime: "2:00 PM",
       EventsCalendarCategory: "Technology",
       image: "/images/HomePage-Images/Events/Events2.jpg",
-      link: "https://in.bookmyshow.com/events/chennai-business-networking/ET00446574",
+      link: "/eventstechstartups",
     },
     {
       EventsCalendarTitle: "Entrepreneur Workshop",
@@ -69,7 +69,7 @@ export default function CardCarousel111() {
       EventsCalendarTime: "11:00 AM",
       EventsCalendarCategory: "Business",
       image: "/images/HomePage-Images/Events/Events3.jpg",
-      link: "https://in.bookmyshow.com/events/cyber-security-expo-and-conference-india-csec/ET00440106",
+      link: "/eventschennaibusinessnetwork",
     },
     {
       EventsCalendarTitle: "Startup Networking Global Startup Clubs",
@@ -79,7 +79,7 @@ export default function CardCarousel111() {
       EventsCalendarTime: "10:30 AM",
       EventsCalendarCategory: "Networking",
       image: "/images/HomePage-Images/Events/Events1.jpg",
-      link: "https://in.bookmyshow.com/events/shaadi-shud-i-by-mohammed-hussain/ET00396162",
+      link: "/eventstechinnovaters",
     },
     {
       EventsCalendarTitle: "Tech Innovators Meetup",
@@ -88,7 +88,7 @@ export default function CardCarousel111() {
       EventsCalendarTime: "2:00 PM",
       EventsCalendarCategory: "Technology",
       image: "/images/HomePage-Images/Events/Events2.jpg",
-      link: "https://in.bookmyshow.com/events/chennai-business-networking/ET00446574",
+      link: "/eventstechstartups",
     },
     {
       EventsCalendarTitle: "Entrepreneur Workshop",
@@ -97,7 +97,7 @@ export default function CardCarousel111() {
       EventsCalendarTime: "11:00 AM",
       EventsCalendarCategory: "Business",
       image: "/images/HomePage-Images/Events/Events3.jpg",
-      link: "https://in.bookmyshow.com/events/cyber-security-expo-and-conference-india-csec/ET00440106",
+      link: "/eventschennaibusinessnetwork",
     },
   ];
 
@@ -183,9 +183,7 @@ export default function CardCarousel111() {
               </div>
 
               <div className="thirdSectionCalendarContent">
-                <p>
-                 Startup Networking Global Startup Clubs...
-                </p>
+                <p>Startup Networking Global Startup Clubs...</p>
               </div>
 
               <div className="eventsCalendarLinks">
@@ -196,7 +194,7 @@ export default function CardCarousel111() {
               {/* <Link to="/eventsmain"> */}
               <p
                 onClick={() => {
-                  navigate("/eventsmain");
+                  navigate("/eventstechinnovaters");
                   window.scrollTo({ top: 0 });
                 }}
                 className="FindOutMore"
@@ -232,7 +230,7 @@ export default function CardCarousel111() {
                 <motion.div
                   key={index}
                   className="EventsCalendarCardSection min-w-[300px] h-[400px] bg-white"
-                  onClick={() => navigate("/eventsmain")}
+                 onClick={() => navigate(card.link)}
                   whileHover={{ scale: 1.05 }}
                 >
                   <div className="relative w-full h-[250px]">

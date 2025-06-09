@@ -7,7 +7,7 @@ export default function TechEdu() {
     <>
       <div className="techEduMainRow">
         <div className="techEduImage1 cursor-pointer" 
-         onClick={() => navigate("/employmentbusinesspermits")}
+         onClick={() => navigate("/employmentinchennai")}
         >
           <img src="./images/HomePage-Images/Tech.png" alt="" />
           <div className="techEdu1Content1">

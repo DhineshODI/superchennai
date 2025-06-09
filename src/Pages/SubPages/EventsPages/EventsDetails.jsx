@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function EventsDetails() {
   return (
     <>
@@ -9,7 +10,7 @@ export default function EventsDetails() {
           <div className="accodoamationBannerText">
             <h3>Events</h3>
             <div className="breadCrum">
-              <a href="">Home</a> - <a href="">Events</a>{" "}
+              <Link to="/">Home</Link> - <Link to="/eventsmain">Events</Link>{" "}
             </div>
           </div>
         </div>

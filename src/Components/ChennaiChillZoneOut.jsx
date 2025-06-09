@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect , useMemo} from "react";
+import { useRef, useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import "../assets/Css/ChennaiChillZone.css";
 import { link } from "framer-motion/client";
@@ -10,38 +10,36 @@ const cards = [
     description:
       "Explore distinctive neighborhoods where gifted artists reside and display their most recent creations.",
     image: "/images/HomePage-Images/Chillout/artists-villages.jpg",
-    link: "/placestovisit",
+    link: "/visit-placetovisit-artists-villages",
   },
   {
     title: "Botanical Gardens",
     description:
       "In exquisitely designed urban oasis, discover peace amid a variety of plants and luxuriant foliage.",
     image: "/images/HomePage-Images/Chillout/botanical.jpg",
-    link: "/placestovisit",
+    link: "/visit-placetovisit-botanical-gardens",
   },
   {
     title: "Cultural",
     description:
       "Take in the mesmerizing performances of traditional art, which preserve India's rich cultural heritage.",
     image: "/images/HomePage-Images/Chillout/cultural.jpg",
-    link: "/placestovisit",
+    link: "/visit-placetovisit-cultural-foundations",
   },
   {
     title: "Modern Malls",
     description:
       "Enjoy a variety of culinary options, entertainment, and retail therapy at the city's modern centers.",
     image: "/images/HomePage-Images/Chillout/modern-malls.jpg",
-    link: "/placestovisit",
+    link: "/visit-placetovisit-modern-malls",
   },
   {
     title: "Urban Beaches",
     description:
       "Take in the vibrant ambiance, stroll along the lengthy beach, and see the busy local life.",
     image: "/images/HomePage-Images/Chillout/urban-beaches.jpg",
-    link: "/placestovisit",
+    link: "/visit-placetovisit-urban-beaches",
   },
- 
-  
 ];
 
 export default function CardCarousel() {
@@ -74,10 +72,6 @@ export default function CardCarousel() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-
-
-
 
   return (
     <div className="chillZoneMainContainer">
@@ -113,7 +107,8 @@ export default function CardCarousel() {
           >
             {cards.map((card, idx) => (
               <motion.div
-                onClick={() => navigate("/placestovisit")}
+                // onClick={() => navigate("/placestovisit")}
+                onClick={() => navigate(card.link)}
                 className="chillZoneImageCard cursor-pointer"
                 key={idx}
                 style={{ width: `${cardWidth}px` }}

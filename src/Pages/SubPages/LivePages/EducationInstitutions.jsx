@@ -25,28 +25,48 @@ export default function EducationInstitutions() {
 
   const benefitSections = [
     {
+      sectionTitle: "Renowned Educational Institutions",
+      sectionDesc:
+        "Chennai hosts many reputable school groups and individual schools recognized for their academic achievements.     ",
+      image: "/images/Live-Images/SubPages/renowned.jpg",
+      benefits: [
+        {
+          id: 2,
+          title: "International Schools",
+          para: "Establishments such as the American International School and the British International School provide worldwide acknowledged curricula and varied educational settings. ",
+          imgs: "/images/Live-Images/SubPages/Icons/International-Schools.svg",
+        },
+        {
+          id: 1,
+          title: "Notable School Groups",
+          para: "Renowned institutions in Chennai's educational landscape consist of the PSBB Group of Schools, Chettinad Vidyashram, and SBOA School & Junior College. ",
+          imgs: "/images/Live-Images/SubPages/Icons/Notable-School-Groups.svg",
+        },
+      ],
+    },
+    {
       sectionTitle: "Newcomers",
       sectionDesc:
         "Chennai offers a wide variety of schooling options with a strong emphasis on academics, extracurriculars, and cultural values. Here’s what newcomers should know",
-      image: "/images/Live-Images/SubPages/linguistic.jpg",
+      image: "/images/Live-Images/SubPages/Birla-Open-Minds-International-School.jpg",
       benefits: [
         {
           id: 1,
           title: "Local and Neighborhood Schools",
           para: "Numerous schools in Chennai adhere to the State Board and Matriculation curricula, firmly embedded in the regional educational system. National Uniformity: The CBSE (Central Board of Secondary Education) curriculum is a favored option for families looking for a consistently recognized and uniform educational standard throughout India.",
-          imgs: "/images/Live-Images/SubPages/Icons/Local-Language-Emphasis.svg",
+          imgs: "/images/Live-Images/SubPages/Icons/Local-and-Neighborhood-Schools.svg",
         },
         {
           id: 2,
           title: "Wide English-Medium Method",
           para: "Institutions such as Sishya typically provide the ICSE/ISC curriculum, recognized for its English-medium teaching and an extensive variety of subjects.",
-          imgs: "/images/Live-Images/SubPages/Icons/National-and-International-Languages.svg",
+          imgs: "/images/Live-Images/SubPages/Icons/Wide-English-Medium-Method.svg",
         },
         {
           id: 3,
           title: "Global Views",
           para: "Esteemed private and overseas institutions, including American International School and The British International School, offer international curricula such as IB (International Baccalaureate) and Cambridge (IGCSE).",
-          imgs: "/images/Live-Images/SubPages/Icons/National-and-International-Languages.svg",
+          imgs: "/images/Live-Images/SubPages/Icons/Global-Views.svg",
         },
       ],
     },
@@ -54,7 +74,7 @@ export default function EducationInstitutions() {
       sectionTitle: "Linguistic Variety in Education",
       sectionDesc:
         "Schools in Chennai provide a range of language choices to serve its diverse linguistic community. ",
-      image: "/images/Live-Images/SubPages/linguistic.jpg",
+      image: "/images/Live-Images/SubPages/Linguistic-Variety-in-Education.jpg",
       benefits: [
         {
           id: 1,
@@ -70,26 +90,7 @@ export default function EducationInstitutions() {
         },
       ],
     },
-    {
-      sectionTitle: "Renowned Educational Institutions",
-      sectionDesc:
-        "Chennai hosts many reputable school groups and individual schools recognized for their academic achievements.     ",
-      image: "/images/Live-Images/SubPages/renowned.jpg",
-      benefits: [
-        {
-          id: 1,
-          title: "Notable School Groups",
-          para: "Renowned institutions in Chennai's educational landscape consist of the PSBB Group of Schools, Chettinad Vidyashram, and SBOA School & Junior College. ",
-          imgs: "/images/Live-Images/SubPages/Icons/Notable-School-Groups.svg",
-        },
-        {
-          id: 2,
-          title: "International Schools",
-          para: "Establishments such as the American International School and the British International School provide worldwide acknowledged curricula and varied educational settings. ",
-          imgs: "/images/Live-Images/SubPages/Icons/International-Schools.svg",
-        },
-      ],
-    },
+
     {
       sectionTitle: "Mapping Your Higher Education",
       sectionDesc:
@@ -135,7 +136,7 @@ export default function EducationInstitutions() {
   const images = [
     {
       src: "/images/Live-Images/Cost-of-living.jpg",
-      title: "Cost-of-living",
+      title: "Cost-of-Living",
       link: "/costofliving",
     },
     {
@@ -149,7 +150,7 @@ export default function EducationInstitutions() {
       link: "/employmentinchennai",
     },
     {
-      src: "/images/Live-Images/Transportation.jpg",
+      src: "/images/Live-Images/chennaiLifeEssential4.png",
       title: "Transportation",
       link: "/transportation",
     },

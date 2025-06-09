@@ -52,7 +52,7 @@
 }
 
 .menuBarLinksContent li {
-  /* font-family: "Poppinsthin";
+  /*font-family: "Poppinsthin";
   font-weight: 600;
   text-transform: uppercase;
   color: #808080;
@@ -60,8 +60,8 @@
   border-bottom: 1px solid #dddddd;
   letter-spacing: 2px;
   font-size: clamp(22px, 4vw, 44px);
-  line-height: clamp(36px, 6vw, 74px); */
-  font-family: "Poppinsthin";
+  line-height: clamp(36px, 6vw, 74px);
+  */font-family: "Poppinsthin";
   font-weight: 600;
   text-transform: uppercase;
   color: #808080;
@@ -69,7 +69,12 @@
   letter-spacing: 0px;
   font-size: clamp(22px, 4vw, 44px);
   line-height: clamp(36px, 6vw, 74px);
-  position: relative; /* Needed for absolute ::after */
+  position: relative;
+  transition: color 0.3s ease, letter-spacing 0.3s ease;
+  /*Neededforabsolute:;
+  :;
+
+
 }
 
 .menuBarLinksContent li::after {
@@ -153,7 +158,6 @@
 }
 
 @media (max-width: 768px) {
-
   .closeButtonMenuBaDesktop {
     display: none;
   }
@@ -256,10 +260,9 @@
   }
 }
 @media (min-width: 768px) {
-
-  .containerMenuBar{
-  margin-left: 0;
-}
+  .containerMenuBar {
+    margin-left: 0;
+  }
   .closeButtonMenuBarMobile {
     display: none;
   }
@@ -346,7 +349,7 @@
   margin-bottom: 10px;
   font-family: NewAmsterdam;
   font-size: clamp(40px, 6vw, 60px);
-  line-height: clamp(44px, 5vw, 73px);
+  line-height: clamp(44px, 5vw, 50px);
   color: #995098;
 }
 

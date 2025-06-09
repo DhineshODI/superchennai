@@ -21,6 +21,10 @@
 
 .cardImageSection {
   position: relative;
+  /* transition: transform 0.4s ease, box-shadow 0.4s ease; */
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.5s ease;
+  will-change: transform;
 }
 
 .titleFunChennaiDiv {
@@ -48,9 +52,14 @@
 } */
 
 .cardImageSection img {
-  /* display: none ; */
   background: linear-gradient(-52deg, #060606 -92%, #060606, transparent 100%);
 }
+.cardImageSection:hover {
+  /* transform: translateY(-20px); */
+  transform: translateY(-12px) scale(1.02);
+  /* box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2); */
+}
+
 .titleFunChennai {
   color: #fff;
   font-size: 30px;
@@ -102,8 +111,8 @@
   background-position: center;
   background-repeat: no-repeat;
   right: -62px;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   object-fit: cover;
   top: 74%;
 }
@@ -116,8 +125,8 @@
   left: 1142px;
   top: 62%;
   right: -25px;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   object-fit: cover;
 }
 
@@ -139,8 +148,8 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
 }
 
 .FunchennaiSliderSection .slick-prev:hover {
@@ -149,8 +158,8 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
 }
 
 .parachuteSection {
@@ -162,7 +171,7 @@
   animation: parachuteFloat 6s ease-in-out infinite alternate;
 }
 .funchennaiMainConatiner {
-  margin-left: 28%;
+  margin-left: 32%;
 }
 
 @keyframes parachuteFloat {
@@ -279,11 +288,11 @@
   }
 }
 
-@media(max-width:1258px) and (min-width:1000px){
-      .FunchennaiSliderSection .slick-next {
-        right: -50px;
-        top: 70%;
-    }
+@media (max-width: 1258px) and (min-width: 1000px) {
+  .FunchennaiSliderSection .slick-next {
+    right: -50px;
+    top: 70%;
+  }
 }
 
 @media (max-width: 1200px) and (min-width: 1000px) {

@@ -1,4 +1,4 @@
-.utilitiesMainRow{
+.utilitiesMainRow {
   overflow: hidden;
   position: relative;
 }
@@ -76,13 +76,19 @@
   line-height: clamp(22px, 2vw, 26px);
 }
 
+.tabsSectionFlex {
+  justify-content: center;
+  row-gap: 15px;
+}
+
+
 ul.tabs {
   margin: 0;
   padding: 0;
   float: left;
   list-style: none;
   width: 40%;
-  padding-top: 8vh;
+  /* padding-top: 8vh; */
 }
 
 ul.tabs li {
@@ -147,21 +153,18 @@ ul.tabs li.active {
   display: none;
 } */
 
-
-
-@media(min-width:768px){
-.tab_drawer_heading{
-  display: none !important;
-}
+@media (min-width: 768px) {
+  .tab_drawer_heading {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
-
   .tab-toggle-icon {
-  font-size: 1.25rem;
-  font-weight: bold;
-  transition: transform 0.3s ease;
-}
+    font-size: 1.25rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+  }
 
   .tabs {
     display: none;
@@ -205,7 +208,7 @@ ul.tabs li.active {
     line-height: 50px;
     width: 71%;
   }
-  .mapsFontSymbols{
+  .mapsFontSymbols {
     font-family: "NewAmsterdam";
     font-size: 36px;
     color: #7e7e7e;

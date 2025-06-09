@@ -13,28 +13,28 @@ export default function TrendingChennai1() {
       subtitle: "D . Imman ",
       para: "Sat 14 June  - in ymca",
       image: "./images/HomePage-Images/Trending/1.jpg",
-      link: "/eventsdetails",
+      link: "/eventsimman",
     },
     {
       name: "Comedy",
       subtitle: "Vikram ",
       para: "Sir Mutha Venkatasubba Rao Concert Hall: Chennai",
       image: "./images/HomePage-Images/Trending/2.jpg",
-      link: "/eventsdetails",
+      link: "/eventsvishal",
     },
     {
       name: "Drama",
       subtitle: "Speed Friending",
       para: "View 5-other Cities",
       image: "./images/HomePage-Images/Trending/3.jpg",
-      link: "/eventsdetails",
+      link: "/eventsspeed",
     },
     {
       name: "Drama",
       subtitle: "Strangers Meet",
       para: "july 15  - in ymca chennai",
       image: "./images/HomePage-Images/Trending/6.jpg",
-      link: "/eventsdetails",
+      link: "/eventsstarngersmeet",
     },
     {
       name: "Rockstar",
@@ -209,7 +209,7 @@ export default function TrendingChennai1() {
                   </div>
                 </div>
 
-                <div className="arrows absolute left-[60%] bottom-0 flex buttonsTredingSections ">
+                <div className="arrows absolute left-[60%] bottom-[4%] flex buttonsTredingSections ">
                   <button
                     onClick={handlePrev}
                     disabled={currentIndex === 0}

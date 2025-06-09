@@ -116,6 +116,7 @@
   color: #ffffff;
   font-size: 3.5vw;
   line-height: 1;
+  letter-spacing: 1px;
 }
 .clcscrLtitle h2 small {
   text-transform: uppercase;

@@ -28,7 +28,7 @@ export default function Transportation() {
       sectionTitle: "On Rail",
       sectionDesc:
         "Chennai offers a variety of local and district-specific transportation options. The railway is the most well-known mode of transportation. Check out the many rail transportation options here.",
-      image: "/images/Live-Images/SubPages/On-Rail.jpg",
+      image: "/images/Live-Images/SubPages/On-Rail-Metro.jpg",
       benefits: [
         {
           id: 1,
@@ -74,7 +74,7 @@ export default function Transportation() {
       sectionTitle: "Private Enterprises & Intelligent Transportation ",
       sectionDesc:
         "The city is adopting shared transportation through bike rentals, electric vehicle rides, and smart card systems. From electric scooters to bike lanes, Chennai is progressing toward an eco-friendly, technology-driven way to travel. ",
-      image: "/images/Live-Images/SubPages/Private-Enterprises-&-Intelligent-Transportation.jpg",
+      image: "/images/Live-Images/SubPages/Private-Enterprises &-Intelligent-Transportation.jpg",
       benefits: [
         {
           id: 1,
@@ -110,7 +110,7 @@ export default function Transportation() {
  const images = [
     {
       src: "/images/Live-Images/Cost-of-living.jpg",
-      title: "Cost-of-living",
+      title: "Cost-of-Living",
       link: "/costofliving",
     },
     {
@@ -124,7 +124,7 @@ export default function Transportation() {
       link: "/employmentinchennai",
     },
     {
-      src: "/images/Live-Images/Transportation.jpg",
+      src: "/images/Live-Images/chennaiLifeEssential4.png",
       title: "Transportation",
       link: "/transportation",
     },

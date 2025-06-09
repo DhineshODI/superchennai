@@ -1,15 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../assets/Css/Funchennai.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function Funchennai() {
   const navigate = useNavigate();
+  const [initialSlide, setInitialSlide] = useState(null); // null until loaded
 
   const settings = {
+    initialSlide: initialSlide ?? 0,
     autoplay: true,
     arrows: true,
     dots: false,
@@ -25,6 +27,7 @@ export default function Funchennai() {
     prevArrow: <div className="slick-prev">←</div>,
     pauseOnHover: true, // ✅ this pauses slider on hover
     focusOnSelect: false, // ← ⚠️ this is the issue
+
     responsive: [
       {
         breakpoint: 1024,
@@ -56,79 +59,79 @@ export default function Funchennai() {
       title: "Adventure places",
       place: "in chennai",
       image: "./images/HomePage-Images/Funchennai/adventure.jpg",
-      link: "/thingstodo",
+      link: "/visit-thingstodo-adventureplace",
     },
     {
       title: "Beachside Fun",
       place: "in chennai",
       image: "./images/HomePage-Images/Funchennai/beachside.jpg",
-      link: "/thingstodo",
+      link: "/visit-thingstodo-beachsidefun",
     },
     {
       title: "Bowling Alleys",
       place: "in chennai",
       image: "./images/HomePage-Images/Funchennai/bowling.jpg",
-      link: "/thingstodo",
+      link: "/visit-thingstodo-bowlingalleys",
     },
     {
       title: "Bungee Jumping",
       place: "in chennai",
       image: "./images/HomePage-Images/Funchennai/bungee.jpg",
-      link: "/thingstodo",
+      link: "/visit-thingstodo-bungeejumping",
     },
     {
       title: "Entertainment",
       place: "in chennai",
       image: "./images/HomePage-Images/Funchennai/family-entertainment.jpg",
-      link: "/thingstodo",
+      link: "/visit-thingstodo-familyentertainmentcenters",
     },
     {
       title: "Gaming Arcades",
       place: "in chennai",
       image: "./images/HomePage-Images/Funchennai/gaming.jpg",
-      link: "/thingstodo",
+      link: "/visit-thingstodo-gamingarcade",
     },
     {
       title: "Go-Karting",
       place: "in chennai",
       image: "./images/HomePage-Images/Funchennai/go-karting.jpg",
-      link: "/thingstodo",
+      link: "/visit-thingstodo-gokart",
     },
     {
       title: "Horror Houses",
       place: "in chennai",
       image: "./images/HomePage-Images/Funchennai/horror.jpg",
-      link: "/thingstodo",
+      link: "/visit-thingstodo-horrorhouse",
     },
     {
       title: "Multiplexes",
       place: "in chennai",
       image: "./images/HomePage-Images/Funchennai/multiplexs.jpg",
-      link: "/thingstodo",
+      link: "/visit-thingstodo-multiplexes",
     },
     {
       title: "Nature Walk",
       place: "in chennai",
       image: "./images/HomePage-Images/Funchennai/nature-walk.jpg",
-      link: "/thingstodo",
+      link: "/visit-thingstodo-naturewalk",
     },
     {
       title: "Trampoline Parks",
       place: "in chennai",
       image: "./images/HomePage-Images/Funchennai/trampoline.jpg",
-      link: "/thingstodo",
+      link: "/visit-thingstodo-trampolineparks",
     },
     {
       title: "Turf Sports",
       place: "in chennai",
       image: "./images/HomePage-Images/Funchennai/turf.jpg",
-      link: "/thingstodo",
+      link: "/visit-thingstodo-turfsports",
     },
     {
       title: "Ziplines",
       place: "in chennai",
       image: "./images/HomePage-Images/Funchennai/ziplines.jpg",
-      link: "/thingstodo",
+      link: "/visit-thingstodo-ziplines",
     },
   ];
   const images = [
@@ -139,6 +142,20 @@ export default function Funchennai() {
     { src: "./images/sldier1.png", title: "Place to Visit", link: "/page5" },
   ];
 
+  useEffect(() => {
+    const savedSlide = localStorage.getItem("clickedSlide");
+    if (savedSlide !== null) {
+      setInitialSlide(parseInt(savedSlide, 10));
+    } else {
+      setInitialSlide(0); // default if nothing saved
+    }
+  }, []);
+
+  const handleCardClick = (index) => {
+    localStorage.setItem("clickedSlide", index);
+  };
+
+  if (initialSlide === null) return null; // wait until ready
   return (
     <>
       <div className="funchennaiBg">
@@ -156,19 +173,38 @@ export default function Funchennai() {
           </div>
           <div className="relative px-4 py-10 max-w-6xl mx-auto FunchennaiSliderSection">
             <Slider {...settings}>
-              {exploreCards.map((card, index) => (
+              {/* {exploreCards.map((card, index) => (
                 <div key={index}>
                   <div
                     className="cardImageSection cursor-pointer"
-                    onClick={() => navigate("/thingstodo")}
+                     onClick={() => navigate(card.link)}
                   >
-                    <img src={card.image} alt="" draggable={false}  />
-                    {/* <div class="gradientOverlay"></div> */}
-
-                    {/* <div className="titleFunChennaiDiv"> */}
+                    <img src={card.image} alt="" draggable={false} />
                     <p className="titleFunChennai">{card.title}</p>
-                    {/* </div> */}
                   </div>
+                </div>
+              ))} */}
+              {/* {exploreCards.map((card, index) => (
+                <div key={index}>
+                  <Link
+                    to={card.link}
+                    className="cardImageSection block cursor-pointer"
+                  >
+                    <img src={card.image} alt={card.title} draggable={false} />
+                    <p className="titleFunChennai">{card.title}</p>
+                  </Link>
+                </div>
+              ))} */}
+              {exploreCards.map((card, index) => (
+                <div key={index}>
+                  <Link
+                    to={card.link}
+                    className="cardImageSection block cursor-pointer"
+                    onClick={() => handleCardClick(index)}
+                  >
+                    <img src={card.image} alt={card.title} draggable={false} />
+                    <p className="titleFunChennai">{card.title}</p>
+                  </Link>
                 </div>
               ))}
             </Slider>

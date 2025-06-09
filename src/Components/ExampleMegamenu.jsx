@@ -12,57 +12,57 @@ const menuItems = [
     content: [
       {
         title: "Cost of Living",
-        desc: "Affordable Chennai Lifestyle",
+        desc: "Smart Spend",
         link: "/costofliving",
       },
       {
         title: "Residency",
-        desc: "Convenient Living Options",
+        desc: "Live Easy",
         link: "/residencypropertyrentbuyinchennai",
       },
       {
         title: "Employment",
-        desc: "Chennai Work Gateway",
+        desc: "Work Zone",
         link: "/employmentinchennai",
       },
       {
         title: "Transportation",
-        desc: "Connecting Mobility globally",
+        desc: "Easy Commute",
         link: "/transportation",
       },
       {
         title: "Healthcare",
-        desc: "Quality Patient Care",
+        desc: "Well Vibes",
         link: "/healthcare",
       },
       {
-        title: "Cultural Attractions",
-        desc: "Rich Chennai Heritage",
+        title: "City Pulse",
+        desc: "Heritage Hit",
         link: "/culturereligiousattractions",
       },
       {
         title: "Recreation",
-        desc: "Enjoy Leisure and fun",
+        desc: "Play Mode",
         link: "/recreation",
       },
       {
         title: "Neighbourhood",
-        desc: "Diverse compassionate Community",
+        desc: "Local Love",
         link: "/neighbourhood",
       },
       {
         title: "Quality of Life",
-        desc: "Comfortable Chennai Living",
+        desc: "Chennai Vibe",
         link: "/qualityoflife",
       },
       {
-        title: "Future Growth & Development",
-        desc: "Evolving Chennai Landscape",
+        title: "Future Forward",
+        desc: "Next Wave",
         link: "/futuregrowthdeveloping",
       },
       {
-        title: "Educational Institutions",
-        desc: "Connect services seamlessly",
+        title: "Learning Link",
+        desc: "Brain Hub",
         link: "/educationinstitutions",
       },
     ],
@@ -73,57 +73,57 @@ const menuItems = [
     content: [
       {
         title: "Accomodation",
-        desc: "Comfortable Chennai Stays",
+        desc: "Cozy Stays",
         link: "/accomodation",
       },
       {
         title: "Food",
-        desc: "Delicious global cuisines ",
+        desc: "Flavour Trail",
         link: "/food",
       },
       {
         title: "Things to do",
-        desc: "Explore Chennai Culture",
+        desc: "Experience More",
         link: "/thingstodo",
       },
       {
         title: "Places to Visit",
-        desc: "Explore a lot more",
+        desc: "Must-See",
         link: "/placestovisit",
       },
       {
         title: "Itinerary",
-        desc: "Chennai Cultural Trail",
+        desc: "Culture Route",
         link: "/itinerary",
       },
       {
         title: "Hidden Gems",
-        desc: "Discover Local Secrets",
+        desc: "Local Secrets",
         link: "/hiddengems",
       },
       {
         title: "Shopping",
-        desc: "Everything under a sky",
+        desc: "Style Central",
         link: "/shopping",
       },
       {
         title: "Travel Tips",
-        desc: "Navigate Chennai Easily",
+        desc: "Smart Moves",
         link: "/traveltips",
       },
       {
         title: "Wellness",
-        desc: "Rejuvenate Chennai Style",
+        desc: "Urban Reboot",
         link: "/wellness",
       },
       {
         title: "Events",
-        desc: "Chennai Happening Now",
+        desc: "Now Happening",
         link: "/events",
       },
       {
         title: "Conferences",
-        desc: "Chennai Happening Now",
+        desc: "Biz Buzz",
         link: "/conferences",
       },
     ],
@@ -133,43 +133,43 @@ const menuItems = [
     labellink: "/work",
     content: [
       {
-        title: "Employment / Business Permits",
-        desc: "Modern websites & web apps",
+        title: "Business Permits",
+        desc: "Legal Setup",
         link: "/employmentbusinesspermits",
       },
       {
         title: "Unicorns",
-        desc: "Connect services seamlessly",
+        desc: " Big Growth",
         link: "/unicorn",
       },
       {
         title: "Co-Workingspaces",
-        desc: "Connect services seamlessly",
+        desc: "Flexible Work",
         link: "/coworkingspaces",
       },
       {
         title: "PG",
-        desc: "Connect services seamlessly",
+        desc: "Stay Easy",
         link: "/pg",
       },
       {
-        title: "Salaries & Benefits",
-        desc: "Connect services seamlessly",
+        title: "Pay Perk",
+        desc: "Compensation Insights",
         link: "/salariesbenefits",
       },
       {
         title: "Career Growth",
-        desc: "Connect services seamlessly",
+        desc: "Skill Progress",
         link: "/careergrowth",
       },
       {
         title: "Networking",
-        desc: "Connect services seamlessly",
+        desc: "Build Circles",
         link: "/networking",
       },
       {
         title: "Worklife Balance",
-        desc: "Connect services seamlessly",
+        desc: "Life Sync",
         link: "/worklifebalance",
       },
     ],
@@ -331,11 +331,11 @@ const menuItems = [
         desc: "Guiding Future Volunteers",
         link: "/volunteer",
       },
-      {
-        title: "Pride of Chennai",
-        desc: "Volunteers Shape City",
-        link: "/volunteer",
-      },
+      // {
+      //   title: "Pride of Chennai",
+      //   desc: "Volunteers Shape City",
+      //   link: "/volunteer",
+      // },
     ],
   },
 ];
@@ -523,7 +523,7 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                   menuVisible ? "show" : ""
                 }`}
               >
-                {/* <AnimatePresence mode="wait">
+                <AnimatePresence mode="wait">
                   <motion.div
                     key={activeMenu.label}
                     className="megamenuMainContainer"
@@ -573,70 +573,12 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                       alt=""
                     />
                   </motion.div>
-                </AnimatePresence> */}
-                <AnimatePresence mode="wait">
-                  <motion.div
-                    key={activeMenu.label}
-                    className="megamenuMainContainer"
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={
-                      imageLoaded
-                        ? { opacity: 1, y: 0 }
-                        : { opacity: 0, y: -20 }
-                    }
-                    exit={{ opacity: 0, y: -20 }}
-                    transition={{ duration: 0.3, ease: "easeInOut" }}
-                  >
-                    <div className="Newmegamenuinner">
-                      {activeMenu.content.map((block, index) => (
-                        <div
-                          key={index}
-                          className="mega-link-wrapper"
-                          onClick={() => {
-                            navigate(block.link);
-                            setMenuVisible(false);
-                            window.scrollTo({ top: 0 });
-                          }}
-                          style={{ cursor: "pointer" }}
-                        >
-                          <h4 className="mega-block-title">
-                            {block.title.length > 15 &&
-                            block.title.includes(" ")
-                              ? (() => {
-                                  const words = block.title.split(" ");
-                                  const mid = Math.floor(words.length / 2);
-                                  const before = words.slice(0, mid).join(" ");
-                                  const after = words.slice(mid).join(" ");
-                                  return (
-                                    <>
-                                      {before}
-                                      <br />
-                                      {after}
-                                    </>
-                                  );
-                                })()
-                              : block.title}
-                          </h4>
-                          <p className="mega-block-desc">{block.desc}</p>
-                        </div>
-                      ))}
-                    </div>
-
-                    {/* Image stays invisible until loaded */}
-                    <img
-                      className="megamenuMainImage"
-                      src={hoveredImage}
-                      alt=""
-                      onLoad={() => setImageLoaded(true)}
-                      style={{
-                        opacity: imageLoaded ? 1 : 0,
-                        transition: "opacity 0.3s",
-                      }}
-                    />
-                  </motion.div>
                 </AnimatePresence>
+              
               </div>
             )}
+
+     
 
             {mobileMenuOpen && (
               <div className="mobile-menu md:hidden">

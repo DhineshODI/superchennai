@@ -145,6 +145,17 @@ import FreshMediterraneanSalads from "./Pages/SubPages/VisitPages/FreshMediterra
 import GrilledMediterraneanSpecialties from "./Pages/SubPages/VisitPages/GrilledMediterraneanSpecialties";
 import PlacetoVisitStateMuseum from "./Pages/SubPages/VisitPages/Place-to-Visit-State-Museum";
 import CoastalandReginalSpecialist from "./Pages/SubPages/VisitPages/CoastalandReginalSpecilalist";
+import EventsImman from "./Pages/SubPages/EventsPages/EventsImman";
+import EventsVishal from "./Pages/SubPages/EventsPages/EventsVishal";
+import EventsSpeed from "./Pages/SubPages/EventsPages/EventsSpeed";
+import EventsStrangersMeet from "./Pages/SubPages/EventsPages/EventsStranger";
+import EventsChennaiBusinessNetwork from "./Pages/SubPages/EventsPages/EventsChennaiBusinessNetwork";
+import EventsTechInnovaters from "./Pages/SubPages/EventsPages/EventsTechInnovaters";
+import EventsStartups from "./Pages/SubPages/EventsPages/EventsStarups";
+import DimSumandNoodles from "./Pages/SubPages/VisitPages/DimSumandNoodles";
+import AuthenticChineseMains from "./Pages/SubPages/VisitPages/AuthenticChineseMains";
+import BreakfastTiffinStaples from "./Pages/SubPages/VisitPages/BreakfastTiffinStaples";
+import TraditionalSouthIndianMealsThali from "./Pages/SubPages/VisitPages/TraditionalSouthIndianMealsThali";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -276,7 +287,7 @@ function App() {
   return (
     <>
       <Router>
-        <ScrollToTop />
+        {/* <ScrollToTop /> */}
         <HeaderWithMegaMenu setMenuBar={setMenuBar} setMenuBar1={setMenuBar1} />
 
         {/* Sticky Icons */}
@@ -631,6 +642,22 @@ function App() {
             element={<CoastalandReginalSpecialist />}
           />
 
+          <Route path="/dimsumandnoodles" element={<DimSumandNoodles />} />
+          <Route
+            path="/authenticchinesemains"
+            element={<AuthenticChineseMains />}
+          />
+
+          <Route
+            path="/breakfasttiffinstaples"
+            element={<BreakfastTiffinStaples />}
+          />
+
+          <Route
+            path="/traditionalsouthindianmealsthali"
+            element={<TraditionalSouthIndianMealsThali />}
+          />
+
           {/* Food sup pages */}
 
           {/* Visit-Pages */}
@@ -679,6 +706,22 @@ function App() {
           {/* Events-Pages */}
 
           <Route path="/eventsdetails" element={<EventsDetails />} />
+          <Route path="/eventsimman" element={<EventsImman />} />
+          <Route path="/eventsvishal" element={<EventsVishal />} />
+          <Route path="/eventsspeed" element={<EventsSpeed />} />
+          <Route
+            path="/eventsstarngersmeet"
+            element={<EventsStrangersMeet />}
+          />
+          <Route
+            path="/eventschennaibusinessnetwork"
+            element={<EventsChennaiBusinessNetwork />}
+          />
+          <Route
+            path="/eventstechinnovaters"
+            element={<EventsTechInnovaters />}
+          />
+          <Route path="/eventstechstartups" element={<EventsStartups />} />
 
           {/* Events-Pages */}
 

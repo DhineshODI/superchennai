@@ -171,7 +171,7 @@ export default function SalariesBenefits() {
           </div>
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
-              <h3>SalariesBenefits </h3>
+              <h3>Salaries & Benefits </h3>
               <div className="breadCrum">
                 <Link to="/work"> Work </Link> -{" "}
                 <a href="">Salaries Benefits </a>{" "}
@@ -202,7 +202,7 @@ export default function SalariesBenefits() {
             </div>
 
             <div className="workIntro">
-              <h3>SalariesBenefits </h3>
+              <h3>Salaries & Benefits </h3>
               <p>
                 The salary range offered by Chennai's job market varies based on
                 factors such as IT, non-IT, core, government, experienced,
@@ -265,7 +265,7 @@ export default function SalariesBenefits() {
                   health insurance, incentives, and even paid leave for some
                   employees.
                 </p>
-                <div className="boxttlsec">Single</div>
+                {/* <div className="boxttlsec">Single</div> */}
               </div>
             </div>
           </div>

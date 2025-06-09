@@ -7,73 +7,52 @@ export default function Search() {
   const [loading, setLoading] = useState(false);
   const [suggestions, setSuggestions] = useState([]);
   const navigate = useNavigate();
-  const suggestionList = [
-    "Chennai Marina Beach",
-    "Chennai Temples",
-    "Chennai Food",
-    "Chennai Nightlife",
-    "Chennai IT Parks",
-    "Chennai Malls",
-    "Chennai Events",
-    "Chennai Marina Beach",
-    "Chennai Temples",
-    "Chennai Food",
-    "Chennai Nightlife",
-    "Chennai IT Parks",
-    "Chennai Malls",
-    "Chennai Events",
-    "Chennai Marina Beach",
-    "Chennai Temples",
-    "Chennai Food",
-    "Chennai Nightlife",
-    "Chennai IT Parks",
-    "Chennai Malls",
-    "Chennai Events",
-  ];
-  const suggestionsData = [
-    { title: "Trending Chennai", searchText: "trending" },
-    { title: "Fun in Chennai", searchText: "fun chennai" },
-    { title: "Startup Ecosystem", searchText: "startup chennai" },
-    { title: "IT Sector Growth", searchText: "it sector" },
-    { title: "Food Trails", searchText: "diverse delights" },
-    { title: "Chettinad Cuisine", searchText: "chettinad" },
-    { title: "Italian Food", searchText: "italian" },
-    { title: "Chinese Cuisine", searchText: "chinese" },
-    { title: "North Indian Dishes", searchText: "north indian" },
-    { title: "Continental Flavors", searchText: "continental" },
-    { title: "Burmese Cuisine", searchText: "burmese" },
-    { title: "Malaysian Food", searchText: "malaysian" },
-    { title: "South Indian Veg", searchText: "south indian" },
-    { title: "Mexican Dishes", searchText: "mexican" },
-    { title: "Chennai Investments", searchText: "investments" },
-    { title: "Real Estate", searchText: "real estate" },
-    { title: "OMR - IT Corridor", searchText: "omr" },
-    { title: "Adyar Properties", searchText: "adyar" },
-    { title: "Maraimalai Nagar", searchText: "maraimalai" },
-    { title: "Utilities", searchText: "utilities" },
-    { title: "Banks & Pharmacies", searchText: "banks" },
-    { title: "ChillOut Zone", searchText: "chillout" },
-    { title: "Beaches in Chennai", searchText: "beaches" },
-    { title: "Shopping Malls", searchText: "malls" },
-    { title: "Restobars", searchText: "restobars" },
-    { title: "Events Calendar", searchText: "events" },
-    { title: "Music Shows", searchText: "concerts" },
-    { title: "Volunteer in Chennai", searchText: "volunteer" },
-    { title: "Public Art Projects", searchText: "design" },
-    { title: "Explore More", searchText: "explore" },
-    { title: "Social Chennai", searchText: "social chennai" },
-    { title: "Humans of Chennai", searchText: "humans" },
-    { title: "Food Culture", searchText: "culinary" },
-    { title: "Nightlife in Chennai", searchText: "nightlife" },
-    { title: "Local Events", searchText: "festivals" },
-    { title: "Cultural Events", searchText: "culture" },
-    { title: "Innovation in Chennai", searchText: "innovation" },
-    { title: "Retire in Chennai", searchText: "retire" },
-    { title: "Franchise in Chennai", searchText: "franchise" },
-    { title: "Renewable Energy", searchText: "energy" },
-    { title: "Youth Mentorship", searchText: "mentorship" },
-    { title: "Technology in Chennai", searchText: "technology" },
-  ];
+
+//   const suggestionsData = [
+//   { title: "Trending Chennai", searchText: "Trending Chennai" },
+//   { title: "fun chennai", searchText: "fun chennai" },
+//   { title: "startup chennai", searchText: "startup chennai" },
+//   { title: "it sector", searchText: "it sector" },
+//   { title: "diverse delights", searchText: "diverse delights" },
+//   { title: "chettinad", searchText: "chettinad" },
+//   { title: "italian", searchText: "italian" },
+//   { title: "chinese", searchText: "chinese" },
+//   { title: "north indian", searchText: "north indian" },
+//   { title: "continental", searchText: "continental" },
+//   { title: "burmese", searchText: "burmese" },
+//   { title: "malaysian", searchText: "malaysian" },
+//   { title: "south indian", searchText: "south indian" },
+//   { title: "mexican", searchText: "mexican" },
+//   { title: "investments", searchText: "investments" },
+//   { title: "real estate", searchText: "real estate" },
+//   { title: "omr", searchText: "omr" },
+//   { title: "adyar", searchText: "adyar" },
+//   { title: "maraimalai", searchText: "maraimalai" },
+//   { title: "utilities", searchText: "utilities" },
+//   { title: "banks", searchText: "banks" },
+//   { title: "chillout", searchText: "chillout" },
+//   { title: "beaches", searchText: "beaches" },
+//   { title: "malls", searchText: "malls" },
+//   { title: "restobars", searchText: "restobars" },
+//   { title: "events", searchText: "events" },
+//   { title: "concerts", searchText: "concerts" },
+//   { title: "volunteer", searchText: "volunteer" },
+//   { title: "design", searchText: "design" },
+//   { title: "explore", searchText: "explore" },
+//   { title: "social chennai", searchText: "social chennai" },
+//   { title: "humans", searchText: "humans" },
+//   { title: "culinary", searchText: "culinary" },
+//   { title: "nightlife", searchText: "nightlife" },
+//   { title: "festivals", searchText: "festivals" },
+//   { title: "culture", searchText: "culture" },
+//   { title: "innovation", searchText: "innovation" },
+//   { title: "retire", searchText: "retire" },
+//   { title: "franchise", searchText: "franchise" },
+//   { title: "energy", searchText: "energy" },
+//   { title: "mentorship", searchText: "mentorship" },
+//   { title: "technology", searchText: "technology" },
+// ];
+
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -89,12 +68,13 @@ export default function Search() {
   const handleInputChange = (e) => {
     const value = e.target.value;
     setQuery(value);
-    const filtered = suggestionsData.filter(
-      (item) =>
-        item.title.toLowerCase().includes(value.toLowerCase()) ||
-        item.searchText.toLowerCase().includes(value.toLowerCase())
-    );
-    setSuggestions(value ? filtered : []);
+
+    // const filtered = suggestionsData.filter(
+    //   (item) =>
+    //     item.title.toLowerCase().includes(value.toLowerCase()) ||
+    //     item.searchText.toLowerCase().includes(value.toLowerCase())
+    // );
+    // setSuggestions(value ? filtered : []);
   };
 
   const handleSuggestionClick = (title) => {
