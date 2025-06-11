@@ -11,9 +11,9 @@ export default function Becameavolunteer() {
       image: "/images/Volunteer-Images/BacameAvolunterImage0.png",
       title: "Digital",
       subtitle:
-        "Chennai Needs Your Creativity! Help us paint and design public spaces.",
+        "Create for a Cause. Share for a City. Volunteer Digitally.",
       description:
-        "Utilize your technological expertise to assist Super Chennai. Help with data analysis, site design, or social media to create a virtual influence throughout the city.",
+        "You already create — now do it with purpose. Whether you're posting, designing, or sharing, your digital voice can help Chennai go further. Be part of the change — from anywhere.",
       link: "/volunteer",
     },
     {

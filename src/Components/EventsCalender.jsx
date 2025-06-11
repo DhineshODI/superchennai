@@ -152,9 +152,11 @@ export default function CardCarousel111() {
         <div className="container max-w-7xl mx-auto px-4 EventsCalendarTitleMain">
           <h2>Events Calendar</h2>
           <p>
-            Keep updated with Chennai's exciting events, including seminars,
+            {/* Keep updated with Chennai's exciting events, including seminars,
             concerts, exhibits, and cultural festivals. Examine a variety of
-            events in the city that appeal to a range of interests.
+            events in the city that appeal to a range of interests. */}
+            Conferences by day, concerts by night — Chennai’s event calendar
+            blends innovation, culture, and entertainment effortlessly.
           </p>
         </div>
 
@@ -230,7 +232,7 @@ export default function CardCarousel111() {
                 <motion.div
                   key={index}
                   className="EventsCalendarCardSection min-w-[300px] h-[400px] bg-white"
-                 onClick={() => navigate(card.link)}
+                  onClick={() => navigate(card.link)}
                   whileHover={{ scale: 1.05 }}
                 >
                   <div className="relative w-full h-[250px]">

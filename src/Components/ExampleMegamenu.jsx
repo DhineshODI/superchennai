@@ -12,57 +12,62 @@ const menuItems = [
     content: [
       {
         title: "Cost of Living",
-        desc: "Smart Spend",
+        desc: "Live large without spending big",
         link: "/costofliving",
       },
       {
         title: "Residency",
-        desc: "Live Easy",
+        desc: "Stay your way - flexible and easy",
         link: "/residencypropertyrentbuyinchennai",
       },
       {
         title: "Employment",
-        desc: "Work Zone",
+        // desc: "Work where ambition meets opportunity.",
+        desc: "Thriving hub for every professional",
         link: "/employmentinchennai",
       },
       {
         title: "Transportation",
-        desc: "Easy Commute",
+        desc: "Move smart with global connectivity",
         link: "/transportation",
       },
       {
         title: "Healthcare",
-        desc: "Well Vibes",
+        desc: "Top-tier care, right around the corner",
         link: "/healthcare",
       },
       {
+        // title: "Cultural Attractions",
         title: "City Pulse",
-        desc: "Heritage Hit",
+        desc: "Heritage vibes with a modern twist",
         link: "/culturereligiousattractions",
       },
       {
         title: "Recreation",
-        desc: "Play Mode",
+        desc: "Play hard, chill harder",
         link: "/recreation",
       },
       {
         title: "Neighbourhood",
-        desc: "Local Love",
+        desc: "Find your vibe, find your tribe",
         link: "/neighbourhood",
       },
       {
         title: "Quality of Life",
-        desc: "Chennai Vibe",
+        desc: "Comfort, calm, and city cool",
         link: "/qualityoflife",
       },
       {
         title: "Future Forward",
-        desc: "Next Wave",
+        // title: "Future Growth & Development",
+
+        desc: "A city that’s always leveling up",
         link: "/futuregrowthdeveloping",
       },
       {
         title: "Learning Link",
-        desc: "Brain Hub",
+        // title: "Educational Institutions",
+        desc: "Learn big in bold spaces",
         link: "/educationinstitutions",
       },
     ],
@@ -73,57 +78,57 @@ const menuItems = [
     content: [
       {
         title: "Accomodation",
-        desc: "Cozy Stays",
+        desc: "Cozy, stylish stays in Chennai",
         link: "/accomodation",
       },
       {
         title: "Food",
-        desc: "Flavour Trail",
+        desc: "Global flavours with local flair",
         link: "/food",
       },
       {
         title: "Things to do",
-        desc: "Experience More",
+        desc: "Make memories across the city",
         link: "/thingstodo",
       },
       {
         title: "Places to Visit",
-        desc: "Must-See",
+        desc: "Explore iconic spots and hidden marvels",
         link: "/placestovisit",
       },
       {
         title: "Itinerary",
-        desc: "Culture Route",
+        desc: "Curated trails for cultural discovery",
         link: "/itinerary",
       },
       {
         title: "Hidden Gems",
-        desc: "Local Secrets",
+        desc: "Uncover Chennai’s best-kept secrets",
         link: "/hiddengems",
       },
       {
         title: "Shopping",
-        desc: "Style Central",
+        desc: "Find everything from luxe to local",
         link: "/shopping",
       },
       {
         title: "Travel Tips",
-        desc: "Smart Moves",
+        desc: "Smart hacks for smooth travel",
         link: "/traveltips",
       },
       {
         title: "Wellness",
-        desc: "Urban Reboot",
+        desc: "Refresh with urban wellness escapes",
         link: "/wellness",
       },
       {
         title: "Events",
-        desc: "Now Happening",
+        desc: "Catch what’s buzzing right now",
         link: "/events",
       },
       {
         title: "Conferences",
-        desc: "Biz Buzz",
+        desc: "Connect at top business forums",
         link: "/conferences",
       },
     ],
@@ -134,42 +139,42 @@ const menuItems = [
     content: [
       {
         title: "Business Permits",
-        desc: "Legal Setup",
+        desc: "Hassle-free legal setup guide",
         link: "/employmentbusinesspermits",
       },
       {
         title: "Unicorns",
-        desc: " Big Growth",
+        desc: "Chennai’s booming startup scene",
         link: "/unicorn",
       },
       {
         title: "Co-Workingspaces",
-        desc: "Flexible Work",
+        desc: "Work smart in flexible shared hubs",
         link: "/coworkingspaces",
       },
       {
         title: "PG",
-        desc: "Stay Easy",
+        desc: "Stay affordably with ease",
         link: "/pg",
       },
       {
         title: "Pay Perk",
-        desc: "Compensation Insights",
+        desc: "Explore salaries, perks, and benefits",
         link: "/salariesbenefits",
       },
       {
         title: "Career Growth",
-        desc: "Skill Progress",
+        desc: "Unlock new skills and opportunities",
         link: "/careergrowth",
       },
       {
         title: "Networking",
-        desc: "Build Circles",
+        desc: "Grow through real connections",
         link: "/networking",
       },
       {
         title: "Worklife Balance",
-        desc: "Life Sync",
+        desc: "Thrive with a balanced lifestyle",
         link: "/worklifebalance",
       },
     ],
@@ -180,52 +185,52 @@ const menuItems = [
     content: [
       {
         title: "Real Estate",
-        desc: "Chennai Property Potential",
+        desc: "Invest smart in property",
         link: "/investrealestatechennai",
       },
       {
         title: "Franchise",
-        desc: "Explore Business Opportunities",
+        desc: "Grow with proven models",
         link: "/investfranchisechennai",
       },
       {
         title: "Startups",
-        desc: "Invest Chennai Innovation",
+        desc: "Fuel innovation with smart capital",
         link: "/investstartupschennai",
       },
       {
-        title: "Renewable Energy",
-        desc: "Sustainable Chennai Growth",
+        title: "Green Power",
+        desc: "Support clean energy growth",
         link: "/investrenewableenergychennai",
       },
       {
-        title: "Retire in Chennai",
-        desc: "Serene Investment Choice",
+        title: "Chill Nest",
+        desc: "Retire easy in Chennai",
         link: "/investretirementchennai",
       },
       {
-        title: "Government Initiatives",
-        desc: "Chennai Policy Support",
+        title: "Policy Boost",
+        desc: "Help from government rules",
         link: "/investgovernmentinitiativeschennai",
       },
       {
-        title: "Formalities & Regulations",
-        desc: "Navigate Chennai Investments",
+        title: "Legal Flow",
+        desc: "Simplify legal investment steps",
         link: "/investformalitiesregulationschennai",
       },
       {
         title: "News",
-        desc: "Investment opportunities rise.",
+        desc: "Stay ahead with investment insights",
         link: "/investnewschennai",
       },
       {
         title: "Events",
-        desc: "Connect, learn, grow.",
+        desc: "Connect, learn, and grow opportunities",
         link: "/investeventschennai",
       },
       {
         title: "Exhibitions",
-        desc: "Showcase, explore, invest.",
+        desc: "Explore markets, pitch, and invest",
         link: "/investexhibitionschennai",
       },
     ],
@@ -235,63 +240,63 @@ const menuItems = [
     labellink: "/innovate",
     content: [
       {
-        title: "IT and Software Development",
-        desc: "Digital solutions innovate",
+        title: "IT & Software",
+        desc: "Build digital-first futures",
         link: "/itandsoftwaredevelopment",
       },
       {
-        title: "Artificial Intelligence",
-        desc: "Intelligent automation advances",
+        title: "AI",
+        desc: "Automate smarter with intelligence",
         link: "/artificialintelligenceandmachinelearning",
       },
       {
-        title: "Electric Vehicles",
-        desc: "Sustainable mobility evolves",
+        title: "EV Mobility",
+        desc: "Drive green with tech",
         link: "/ElectricVehicles",
       },
       {
-        title: "Smart City Initiatives",
-        desc: "Connected living transforms",
+        title: "Smart Cities",
+        desc: "Connect life and tech",
         link: "/smartcityinitiatives",
       },
       {
-        title: "Healthcare Tech",
-        desc: "Digital health empowers",
+        title: "Health Tech",
+        desc: "Empower care digitally",
         link: "/healthcaretechinnovation",
       },
       {
-        title: "Robotics and Automation",
-        desc: "Intelligent manufacturing optimizes",
+        title: "Robotics",
+        desc: "Optimize with smart machines",
         link: "/roboticsandautomation",
       },
       {
-        title: "Blockchain and Fintech",
-        desc: "Secure finance revolutionizes",
+        title: "Blockchain",
+        desc: "Safe and smart money tech",
         link: "/blockchainandfintech",
       },
       {
-        title: "Automotive Tech and R&D",
-        desc: "Future mobility drives",
+        title: "Auto Tech",
+        desc: "Mobility meets innovation",
         link: "/automotivetechandrandd",
       },
       {
-        title: "Education Tech",
-        desc: "Learning innovation expands",
+        title: "Edu Tech ",
+        desc: "Expand smarter learning",
         link: "/educationtech",
       },
       {
         title: "3D Printing",
-        desc: "Advanced prototyping creates",
+        desc: "Create with precision tech",
         link: "/threedprintingandadditivemanufacturing",
       },
       {
-        title: "Augmented Reality",
-        desc: "Immersive experiences emerge",
+        title: "AR/VR",
+        desc: "Experience new realities",
         link: "/augmentedreality",
       },
       {
-        title: "Agriculture Tech",
-        desc: "Precision farming modernizes",
+        title: "Agri Tech",
+        desc: "Modernize farms smartly",
         link: "/agriculturetech",
       },
     ],
@@ -303,39 +308,34 @@ const menuItems = [
     content: [
       {
         title: "Digital",
-        desc: "Connect Chennai Volunteers",
+        desc: "Connect and collaborate online",
         link: "/volunteer",
       },
       {
         title: "Events",
-        desc: "Volunteers Power Gatherings",
+        desc: "Help run volunteer meets",
         link: "/volunteer",
       },
       {
         title: "Content Creators",
-        desc: "Sharing Volunteer Stories",
+        desc: "Share inspiring volunteer stories",
         link: "/volunteer",
       },
       {
         title: "Design &  Art",
-        desc: "Visualizing Volunteer Impact",
+        desc: "Showcase causes through creativity",
         link: "/volunteer",
       },
       {
         title: "Influencers",
-        desc: "Amplifying Volunteer Voices",
+        desc: "Promote action through your voice",
         link: "/volunteer",
       },
       {
         title: "Mentors",
-        desc: "Guiding Future Volunteers",
+        desc: "Guide new volunteer minds",
         link: "/volunteer",
       },
-      // {
-      //   title: "Pride of Chennai",
-      //   desc: "Volunteers Shape City",
-      //   link: "/volunteer",
-      // },
     ],
   },
 ];
@@ -574,11 +574,9 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                     />
                   </motion.div>
                 </AnimatePresence>
-              
+           
               </div>
             )}
-
-     
 
             {mobileMenuOpen && (
               <div className="mobile-menu md:hidden">

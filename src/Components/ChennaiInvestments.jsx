@@ -314,9 +314,12 @@ export default function ChennaiInvestments() {
           <div className="ChennaiInvestMents">
             <h4>Chennai Investments</h4>
             <h6>
-              Diverse investment options, from the city's booming real estate
+              {/* Diverse investment options, from the city's booming real estate
               market to the expansion of its infrastructure and IT sector to
-              manufacturing prospects and a burgeoning startup scene.
+              manufacturing prospects and a burgeoning startup scene. */}
+              Settle into success with Chennai’s rich investment landscape —
+              spanning property, tech, manufacturing, and emerging startups —
+              all backed by solid infrastructure and steady economic growth.
             </h6>
           </div>
 

@@ -16,21 +16,22 @@ export default function Utilitiesinchennai() {
         </>
       ),
     },
-    {
-      id: "South",
-      title: "South",
-      content: (
-        <>
-          <img src="/images/HomePage-Images/South Chennai.png" alt="" />
-        </>
-      ),
-    },
+
     {
       id: "Central",
       title: "Central",
       content: (
         <>
           <img src="/images/HomePage-Images/Central Chennai.png" alt="" />
+        </>
+      ),
+    },
+    {
+      id: "South",
+      title: "South",
+      content: (
+        <>
+          <img src="/images/HomePage-Images/South Chennai.png" alt="" />
         </>
       ),
     },
@@ -67,8 +68,11 @@ export default function Utilitiesinchennai() {
             <div className="utilitiTitle mb-[5vh]">
               <h2>Utilities in Chennai</h2>
               <p>
-                Essential services include trash management, water supply,
-                energy, and transportation networks.
+                {/* Essential services include trash management, water supply,
+                energy, and transportation networks. */}
+                Chennai is designed for everyday ease — with well-connected
+                utilities, accessible essentials, and services that keep life
+                running smoothly.
               </p>
             </div>
             <div className="utilitiCheCol ">

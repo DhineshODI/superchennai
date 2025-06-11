@@ -209,10 +209,13 @@
 
   .designBy img {
     width: 30px;
-}
+  }
 }
 
 @media (max-width: 768px) {
+  .credaiLogo {
+    margin-top: 25px;
+  }
   .SectionConatinerSecond {
     margin-top: 15px;
     padding-left: 35px;
@@ -266,13 +269,6 @@
     line-height: 24px;
   }
 
-  /* .FooterHeading::before {
-    content: "+";
-    right: 0;
-    position: absolute;
-    font-weight: 200;
-    font-size: 15px;
-  } */
   .FooterHeading {
     position: relative;
     padding-right: 20px;
@@ -366,5 +362,10 @@
 @media (min-width: 768px) {
   .symbol {
     display: none;
+  }
+
+  .credaiLogo {
+    margin-top: 42px;
+    margin-left: -110px;
   }
 }

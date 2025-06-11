@@ -183,6 +183,26 @@ const Footer = () => {
       link: "/volunteer",
     },
   ];
+
+    const USEFULLINKS3 = [
+    { title: "About us", link: "/volunteer" },
+    { title: "Blog", link: "/volunteer" },
+    { title: "Career", link: "/volunteer" },
+    { title: "Events", link: "/volunteer" },
+    { title: "Social Chennai", link: "/volunteer" },
+    {
+      title: "FAQ",
+      link: "/volunteer",
+    },
+    {
+      title: "Contact Us",
+      link: "/volunteer",
+    },
+       {
+      title: "Sustainability",
+      link: "/volunteer",
+    },
+  ];
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen1, setIsOpen1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
@@ -633,6 +653,33 @@ const Footer = () => {
               )}
             </AnimatePresence>
           </div>
+
+          <div className="SectionLeft1">
+            <h3 className="FooterHeading" onClick={() => setIsOpen3(!isOpen3)}>
+              Quick Links
+              <span className="symbol">{isOpen3 ? "−" : "+"}</span>
+            </h3>
+
+            <AnimatePresence>
+              {isOpen3 && (
+                <motion.div
+                  className="FooterSectionDiv"
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: "auto" }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ duration: 0.3, ease: "easeOut" }}
+                >
+                  <div>
+                    {USEFULLINKS3.map((businessChennaiLinks, index) => (
+                      <Link key={index} to={businessChennaiLinks.link}>
+                        <h5>{businessChennaiLinks.title}</h5>
+                      </Link>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
         </div>
       </div>
       <div className="SectionConatinerSecond1 max-w-7xl mx-auto px-4">
@@ -679,6 +726,9 @@ const Footer = () => {
                 </a>
               </div>
             </div>
+          </div>
+          <div className="credaiLogo">
+            <img src="./images/credaiLogo.png" alt="" />
           </div>
           <div className="copyrights">
             <h5>

@@ -37,7 +37,6 @@ export default function StartupChennai() {
             ref={bgTextRef}
           >
             <p>Startup &nbsp; Chennai &nbsp; Startup &nbsp; Chennai</p>
-         
           </div>
         </div>
 
@@ -45,11 +44,20 @@ export default function StartupChennai() {
           <div className="startupChennaiMainContainer">
             <h3>STARTUP CHENNAI</h3>
             <p>
-              Learn about the technology and networks that drive this vibrant
+              {/* Learn about the technology and networks that drive this vibrant
               ecosystem. Discover the fascinating journey that Chennai's
               up-and-coming startups are taking as they influence the future.
               Here, creativity and investment meet. IT SECTOR - The IT Hub of
-              South India, Expanding Quickly.
+              South India, Expanding Quickly. */}
+              {/* From cloud solutions to AI breakthroughs, Chennai’s IT sector is
+              rewriting the rules. Join the journey of a city that’s turning
+              bold ideas into global impact. */}
+              
+              From cloud solutions to AI breakthroughs, Chennai’s IT sector is
+              transforming rapidly. As a hub of innovation and talent, the city
+              empowers bold ideas to scale globally. With thriving startups,
+              global tech players, and strong digital infrastructure, Chennai is
+              shaping the future of technology across industries and borders.
             </p>
           </div>
 

@@ -287,7 +287,7 @@ function App() {
   return (
     <>
       <Router>
-        {/* <ScrollToTop /> */}
+        <ScrollToTop />
         <HeaderWithMegaMenu setMenuBar={setMenuBar} setMenuBar1={setMenuBar1} />
 
         {/* Sticky Icons */}

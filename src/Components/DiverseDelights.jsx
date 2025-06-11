@@ -35,14 +35,14 @@ export default function HoverImageSectionHorizontal() {
     {
       title: "ITALIAN",
       description:
-        "A celebration of traditional, hearty recipes and fresh ingredients.",
+        "Savor creamy risottos, handmade pastas, and rustic pizzas.",
       imageUrl: "/images/HomePage-Images/Italian.png",
       link: "/menu/italian",
     },
     {
       title: "CHINESE",
       description:
-        " Regional styles that are aromatic, flavorful, and umami-rich.",
+        "Szechuan spice, Cantonese flavor, and timeless Chinese classics.",
       // imageUrl: "/images/HomePage-Images/CHINESE.png",
       imageUrl: "/images/HomePage-Images/chineseFoodMenu.png",
       link: "/menu/mexican",
@@ -50,21 +50,21 @@ export default function HoverImageSectionHorizontal() {
     {
       title: "NORTH INDIAN",
       description:
-        "Fragrant - (Aroma or flavor) spice combinations and hearty, savory gravies.",
+        "Buttery rotis, silky curries, and celebrated northern cuisine.",
       imageUrl: "/images/HomePage-Images/North-Indian.png",
       link: "/menu/chinese",
     },
     {
       title: "CONTINENTAL",
       description:
-        "Variety of sophisticated and varied European culinary traditions.",
+        "Elegant plating, global ingredients, and Continental sophistication served fresh.",
       // imageUrl: "/images/HomePage-Images/FoodImageSection.png",
       imageUrl: "/images/HomePage-Images/Continental.png",
       link: "/menu/indian",
     },
     {
       title: "BURMESE",
-      description: "A distinctive fusion of savory, sour, and sweet flavors.",
+      description: "Savory noodles, zesty pickles, and authentic Burmese cuisine.",
       // imageUrl: "/images/HomePage-Images/CHINESE.png",
       imageUrl: "/images/HomePage-Images/Burmese.png",
       link: "/menu/thai",
@@ -72,21 +72,21 @@ export default function HoverImageSectionHorizontal() {
     {
       title: "THAI",
       description:
-        "Distinguished by its well-balanced flavors and fragrant herbs and spices.",
+        "Fragrant curries, tangy salads, and sizzling Thai street eats.",
       // imageUrl: "/images/HomePage-Images/FoodImageSection.png",
       imageUrl: "/images/HomePage-Images/Thai.png",
       link: "/menu/italian",
     },
     {
       title: "SOUTH INDIAN",
-      description: "Offers tangy, spicy, and tasty vegetarian alternatives.",
+      description: "Crispy dosas, rich sambar, and classic South Indian charm.",
       imageUrl: "/images/HomePage-Images/South-Indian.png",
       link: "/menu/mexican",
     },
     {
       title: "SRI LANKAN",
       description:
-        "Strong and fragrant, with distinct island influences and spice blends.",
+        "Fiery curries, coconut sambol, and soulful Lankan taste.",
       // imageUrl: "/images/HomePage-Images/CHINESE.png",
       imageUrl: "/images/HomePage-Images/Sri-Lankan.png",
       link: "/menu/chinese",
@@ -94,14 +94,14 @@ export default function HoverImageSectionHorizontal() {
     {
       title: "MALAYSIAN",
       description:
-        "Dynamic blend of many culinary traditions that results in multi-layered flavors.",
+        "Chee Cheong Fun, satay skewers, and bold Malaysian flavors.",
       // imageUrl: "/images/HomePage-Images/MEEXICAN.png",
       imageUrl: "/images/HomePage-Images/Malaysian.png",
       link: "/menu/indian",
     },
     {
       title: "MEXICAN",
-      description: "Renowned for its fresh ingredients and colorful flavors.",
+      description: "Zesty tacos, loaded nachos, and crave-worthy Mexican flair.",
       // imageUrl: "/images/HomePage-Images/CHINESE.png",
       imageUrl: "/images/HomePage-Images/Mexican.png",
       link: "/menu/thai",
@@ -138,9 +138,12 @@ export default function HoverImageSectionHorizontal() {
         </div>
         <div className="paragarphTextDiverseFood">
           <p>
-            Savor a culinary journey that highlights the city's diverse and
+            {/* Savor a culinary journey that highlights the city's diverse and
             lively culinary scene, from Chettinad to delicate dosas and
-            international flavors.
+            international flavors. */}
+            Chennai serves bold bites and global plates — from iconic dosas to
+            modern fusion, artisanal cafés to gourmet kitchens. A dynamic food
+            scene crafted for curious eaters and trend-savvy travelers.
           </p>
         </div>
 
